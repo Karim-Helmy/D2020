@@ -1,0 +1,189 @@
+[
+  {
+    "title": "Data storage individual rights",
+    "displayTitle": "Data storage individual rights",
+    "body": "",
+    "_classes": "background-colour2",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_id": "5af54c5afb63a8474498700a",
+    "_parentId": "5af54c5afb63a84744987005",
+    "_type": "article"
+  },
+  {
+    "title": "Children's personal data",
+    "displayTitle": "Children's personal data",
+    "body": "",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_id": "5af54c5afb63a8474498700f",
+    "_parentId": "5af54c5afb63a84744987006",
+    "_type": "article"
+  },
+  {
+    "title": "Consent to use data",
+    "displayTitle": "Consent to use data",
+    "body": "",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_id": "5af54c5afb63a84744987011",
+    "_parentId": "5af54c5afb63a84744987004",
+    "_type": "article"
+  },
+  {
+    "title": "What is data processing?",
+    "displayTitle": "What is data processing?",
+    "body": "",
+    "_classes": "background-colour1",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_id": "5af54c5afb63a84744987009",
+    "_parentId": "5af54c5afb63a84744987004",
+    "_type": "article"
+  },
+  {
+    "title": "What is data transfer?",
+    "displayTitle": "What is data transfer?",
+    "body": "",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_id": "5af54c5afb63a8474498700b",
+    "_parentId": "5af54c5afb63a84744987005",
+    "_type": "article"
+  },
+  {
+    "title": "Article title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "background-image3",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_id": "5af54c5afb63a84744987016",
+    "_parentId": "5af54c5afb63a84744987006",
+    "_type": "article"
+  },
+  {
+    "title": "Conclusion",
+    "displayTitle": "Conclusion",
+    "body": "",
+    "_classes": "background-colour3",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_id": "5af54c5afb63a8474498700d",
+    "_parentId": "5af54c5afb63a84744987006",
+    "_type": "article"
+  },
+  {
+    "title": "Article title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "background-image2",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_id": "5af54c5afb63a84744987013",
+    "_parentId": "5af54c5afb63a84744987005",
+    "_type": "article"
+  },
+  {
+    "title": "Article title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "background-image4",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_id": "5af54c5afb63a84744987014",
+    "_parentId": "5af54c5afb63a84744987004",
+    "_type": "article"
+  },
+  {
+    "title": "Data processing individual rights",
+    "displayTitle": "Data processing individual rights",
+    "body": "",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_id": "5af54c5afb63a84744987008",
+    "_parentId": "5af54c5afb63a84744987004",
+    "_type": "article"
+  },
+  {
+    "title": "When can data be transferred?",
+    "displayTitle": "When can data be transferred?",
+    "body": "",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_id": "5af54c5afb63a8474498700c",
+    "_parentId": "5af54c5afb63a84744987005",
+    "_type": "article"
+  },
+  {
+    "title": "Article title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "background-image3",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_id": "5af54c5afb63a84744987017",
+    "_parentId": "5af54c5afb63a84744987006",
+    "_type": "article"
+  },
+  {
+    "title": "Conditions for lawful processing",
+    "displayTitle": "Conditions for lawful processing",
+    "body": "",
+    "_classes": "background-colour1",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_id": "5af54c5afb63a84744987007",
+    "_parentId": "5af54c5afb63a84744987004",
+    "_type": "article"
+  },
+  {
+    "title": "One-off transfers",
+    "displayTitle": "One-off transfers",
+    "body": "",
+    "_classes": "background-colour2",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_id": "5af54c5afb63a84744987010",
+    "_parentId": "5af54c5afb63a84744987005",
+    "_type": "article"
+  },
+  {
+    "title": "Article title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "background-image2",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_id": "5af54c5afb63a84744987015",
+    "_parentId": "5af54c5afb63a84744987005",
+    "_type": "article"
+  },
+  {
+    "title": "Can you help Gary?",
+    "displayTitle": "Can you help Gary?",
+    "body": "",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_id": "5af54c5afb63a8474498700e",
+    "_parentId": "5af54c5afb63a84744987005",
+    "_type": "article"
+  },
+  {
+    "title": "What should Gary do?",
+    "displayTitle": "What should Gary do?",
+    "body": "",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_id": "5af54c5afb63a84744987012",
+    "_parentId": "5af54c5afb63a84744987004",
+    "_type": "article"
+  }
+]

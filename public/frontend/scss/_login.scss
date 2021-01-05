@@ -1,0 +1,93 @@
+/* login page */
+.login_img{
+  background: url('../images/robotics2.png') no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  &:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(224deg, #5F6BD5 0%, #F18168 100%);
+    opacity: .7;
+  }
+}
+.login_form{
+  padding: 4rem 0;
+  position: relative;
+
+ form{
+
+  background: #fff;
+  padding: 2rem;
+
+  h3{
+    font-family: $bold;
+    font-size: 1.625rem;
+    margin-bottom: 2rem;
+  }
+  label{
+    color: #979797;
+  }
+  .form-control{
+    background: #F3F3F3;
+    border-radius: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  a{
+    color: #F18168;
+    float: right;
+    &:hover{
+      color: #333;
+    }
+  }
+  input[type=submit]{
+    @extend %main_btn;
+  }
+ }
+}
+.checkbox_wrapper{
+  position: relative;
+  display: inline-block;
+  padding-left: 2rem;
+  margin-bottom: 16px;
+  color: #979797;
+
+  input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkLabel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    &:after{
+      content: "\f00c";
+      color: #fff;
+      position: absolute;
+      left: 3px;
+      font-size: 1rem;
+      font-family: 'Font Awesome 5 pro';
+      font-weight: 900;
+      display: none;
+    }
+  }
+
+  input:checked ~ .checkLabel{
+    background: #51B148;
+    border: 1px solid #51B148;
+  }
+  input:checked ~ .checkLabel:after{
+    display: block;
+  }
+}

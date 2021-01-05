@@ -1,0 +1,7 @@
+.list-mark li:before {
+margin-left: 11px;
+margin-right: 0;
+}
+.mt-5 {
+    margin-top: 50px;
+}

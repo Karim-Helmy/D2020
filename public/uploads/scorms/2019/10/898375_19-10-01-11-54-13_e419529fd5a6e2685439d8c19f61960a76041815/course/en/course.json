@@ -1,0 +1,278 @@
+{
+  "title": "(Schools) GDPR Part 2: Data handling rules",
+  "displayTitle": "(Schools) GDPR Part 2: Data handling rules",
+  "body": "<p>Welcome to this course on data handling rules.</p><p>This is the second&nbsp;part in&nbsp;the GDPR suite.</p><p>To help you as you go through the module, a glossary of terms is available, by clicking on the icon in the top right hand corner.</p><p>This course should take approximately 20-25 minutes to complete.&nbsp;</p><p>Click or tap on one of the sections below to begin.</p>",
+  "description": "",
+  "_latestTrackingId": 16,
+  "_language": "en",
+  "_multilanguage": [],
+  "_buttons": {
+    "disabledAriaLabel": "This button is disabled at the moment",
+    "remainingAttemptText": "final attempt",
+    "remainingAttemptsText": "remaining attempts",
+    "_showFeedback": {
+      "ariaLabel": "Show feedback",
+      "buttonText": "Show feedback"
+    },
+    "_hideCorrectAnswer": {
+      "ariaLabel": "Hide correct answer",
+      "buttonText": "Hide correct answer"
+    },
+    "_showCorrectAnswer": {
+      "ariaLabel": "Show correct answer",
+      "buttonText": "Show correct answer"
+    },
+    "_reset": {
+      "ariaLabel": "Reset",
+      "buttonText": "Reset"
+    },
+    "_submit": {
+      "ariaLabel": "Submit",
+      "buttonText": "Submit"
+    }
+  },
+  "_classes": "",
+  "_lockType": "sequential",
+  "_tenantPermission": null,
+  "_id": "course",
+  "_sharingSettings": {
+    "_disableOptions": false,
+    "_allowEditors": false
+  },
+  "_globals": {
+    "_accessibility": {
+      "_accessibilityToggleTextOn": "Turn accessibility on?",
+      "_accessibilityToggleTextOff": "Turn accessibility off?",
+      "skipNavigationText": "Skip navigation",
+      "_accessibilityInstructions": {
+        "touch": "Usage instructions. Use swipe left for next. Use swipe right for previous. Use a double tab to select. Use a two finger slide up to go to the top of the page.",
+        "notouch": "Usage instructions. Use tab for next. Use shift tab for previous. Use enter to select. Use escape to go to the top of the page.",
+        "ipad": "Usage instructions for touchscreens. Use swipe left for next. Use swipe right for previous. Use a double tab to select. Use a two finger slide up to go to the top of the page. Usage instructions for keyboard access. Use left for next. Use right for previous. Use up and down together to select."
+      },
+      "_ariaLabels": {
+        "navigation": "Course navigation bar",
+        "skipNavigation": "Skip navigation",
+        "menuLoaded": "Menu loaded",
+        "menu": "Menu",
+        "menuItem": "Menu item",
+        "menuViewButton": "Select here to enter",
+        "page": "Page",
+        "pageLoaded": "Page loaded",
+        "previous": "Back",
+        "navigationBack": "Navigate back",
+        "navigationDrawer": "Open course resources and search",
+        "closeResources": "Close resources",
+        "drawerBack": "Back to drawer",
+        "drawer": "Side drawer",
+        "closePopup": "Close popup",
+        "next": "Next",
+        "done": "Done",
+        "complete": "Complete",
+        "incomplete": "Incomplete",
+        "correct": "Correct",
+        "locked": "Locked",
+        "accessibilityToggleButton": "By selecting this button you can set whether accessibility is turned on or off",
+        "feedbackPopUp": "Popup opened",
+        "visited": "Visited",
+        "menuBack": "Back to menu",
+        "menuIndicatorHeading": "Menu item heading "
+      }
+    },
+    "_components": {
+      "_graphic": {
+        "ariaRegion": ""
+      },
+      "_narrative": {
+        "ariaRegion": "This component displays an image gallery with accompanying text. Use the next and back navigation controls to work through the narrative."
+      },
+      "_hotgraphic": {
+        "ariaRegion": "Below is a component which allows you to select hot spots over an image. Select a hot spot to trigger a popup that includes an image with display text. Select the close button to close the popup.",
+        "ariaPopupLabel": "Hotgraphic popup"
+      },
+      "_text": {
+        "ariaRegion": ""
+      },
+      "_mcq": {
+        "ariaRegion": "This is a multiple choice question. Once you have selected an option, select the submit button below"
+      },
+      "_accordion": {
+        "ariaRegion": "This component is an accordion comprised of collapsible content panels containing display text. Select the item titles to toggle the visibility of these content panels."
+      },
+      "_flipcard": {
+        "ariaRegion": "This component is a flipcard comprised of flippable cards containing display image. Select the front face image to flip to the back face of these card to display associated text."
+      }
+    },
+    "_extensions": {
+      "_pageLevelProgress": {
+        "pageLevelProgress": "Page sections",
+        "pageLevelProgressIndicatorBar": "Progress bar. Select here to view your current progress, and select an item to navigate to it. You have completed ",
+        "pageLevelProgressMenuBar": "You have completed ",
+        "pageLevelProgressEnd": "You have reached the end of the list of page sections.",
+        "optionalContent": "Optional Content"
+      }
+    },
+    "_menu": {
+      "_coremenu": {
+        "ariaRegion": "Menu",
+        "durationLabel": "Duration:",
+        "menuItem": "Menu item.",
+        "menuEnd": "You have reached the end of the menu."
+      }
+    }
+  },
+  "_start": {
+    "_isMenuDisabled": false,
+    "_force": false,
+    "_startIds": [],
+    "_isEnabled": false
+  },
+  "_type": "course",
+  "menuSettings": {
+    "menu_instruction_text": "",
+    "course_title_visibility": true,
+    "menu_main_background_color": "#FFFFFF",
+    "menu_main_background_image": "course/assets/e40a9220b62538ed990d7c0780ab42f3fbb991a5.png",
+    "menu_item_section": {
+      "menu_items_section_background_image": "course/assets/e40a9220b62538ed990d7c0780ab42f3fbb991a5.png",
+      "menu_items_section_background_color": "#FFFFFF",
+      "menu_item_title_font": "Open Sans",
+      "menu_item_title_font_size": "20px",
+      "menu_item_body_font": "Open Sans",
+      "menu_item_body_font_size": "18px",
+      "custom_menu_item_font_switch": true,
+      "custom_menu_item_title_font": "Coming Soon",
+      "custom_menu_item_body_font": "Open Sans"
+    },
+    "banner_title_section": {
+      "menu_banner_text_align": "left",
+      "menu_banner_position": "middle",
+      "menu_banner_size": "50%",
+      "menu_banner_alignment": "left",
+      "menu_banner_background_color": "#ffffff",
+      "menu_banner_text_color": "#486273",
+      "menu_banner_padding": "on",
+      "menu_banner_opacity": "60%",
+      "menu_banner_title_font": "Open Sans",
+      "menu_banner_title_font_size": "20px",
+      "menu_banner_body_font": "Open Sans",
+      "menu_banner_body_font_size": "18px",
+      "custom_menu_banner_font_switch": true,
+      "custom_menu_banner_title_font": "Coming Soon",
+      "custom_menu_banner_body_font": "Open Sans"
+    },
+    "menu_instruction_text_color": "#486273"
+  },
+  "_pageFooterNavigation": {
+    "_hideUpButton": false,
+    "_hideHomeButton": false,
+    "_displayOptions": "always",
+    "upButtonText": "Up",
+    "homeButtonText": "Home",
+    "prevButtonText": "Previous",
+    "nextButtonText": "Next",
+    "_displayIcons": false,
+    "_isEnabled": true
+  },
+  "_glossary": {
+    "_glossaryItems": [
+      {
+        "description": "Accountability refers to taking responsibility for actions, tasks or processes. In the case of GDPR, accountability refers to the various obligations that organisations will have to follow in order to demonstrate data protection compliance.",
+        "term": "Accountability requirement"
+      },
+      {
+        "description": "The Article 29 Working Party (Art. 29 WP) is made up of a representative from the data protection authority of each EU Member State, the European Data Protection Supervisor and the European Commission.",
+        "term": "Article 29 Working Party"
+      },
+      {
+        "description": "Where the relevant supervisory authority is notified of a data breach.",
+        "term": "Breach notification"
+      },
+      {
+        "description": "The data controller says how and why personal data is processed.",
+        "term": "Data controller"
+      },
+      {
+        "description": "Data collected and processed should not be retained or further used unless this is necessary for purposes that were clearly stated in advance.",
+        "term": "Data minimisation"
+      },
+      {
+        "description": "The ability to obtain and reuse personal data.",
+        "term": "Data portability"
+      },
+      {
+        "description": "Any operation performed on personal data, whether by automated means or otherwise, including collection, use, recording, etc.",
+        "term": "Data processing"
+      },
+      {
+        "description": "The data processor acts on the controller’s behalf and is required to maintain records of personal data and processing activities.",
+        "term": "Data processor"
+      },
+      {
+        "description": "An exemption from, or relaxation of, a rule or law.",
+        "term": "Derogation"
+      },
+      {
+        "description": "The removal of writing, recorded material or data. In this case, the removal of data. ",
+        "term": "Erasure"
+      },
+      {
+        "description": "The ICO is a non-departmental public body whose mission it is to \"uphold information rights in the public interest, promoting openness by public bodies and data privacy for individuals\". The ICO reports directly to Parliament and is sponsored by the Department for Digital, Culture, Media and Sport.",
+        "term": "Information Commissioner's Office (ICO)"
+      },
+      {
+        "description": "This involves organisations releasing data that they hold about customers back to them in a portable electronic format.",
+        "term": "Midata"
+      },
+      {
+        "description": "A breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to, personal data transmitted, stored or otherwise processed in connection with the provision of a public electronic communications service,",
+        "term": "Personal data breach"
+      },
+      {
+        "description": "The Privacy and Electronic Communications Regulations (PECR) sit alongside the Data Protection Act. They give people specific privacy rights in relation to electronic communications.",
+        "term": "Privacy and Electronic Communications (EC Directive) Regulations 2011 (PECR)"
+      },
+      {
+        "description": "An approach that promotes privacy and data protection compliance from the beginning.",
+        "term": "Privacy by design"
+      },
+      {
+        "description": "Procedure where data fields are replaced by one or more artificial identifiers, or pseudonyms. ",
+        "term": "Pseudonymisation"
+      },
+      {
+        "description": "The act of correcting something or putting it right, in this case, the rectification of personal data",
+        "term": "Rectification"
+      },
+      {
+        "description": "Details regarding the purpose, use and processing of personal data and who it will be shared with.",
+        "term": "Registrable particulars"
+      },
+      {
+        "description": "A person or business that sells goods or services.",
+        "term": "Retailer"
+      },
+      {
+        "description": "A board of management of which nonmanagerial workers are members, having supervisory powers over some aspects of management decision-making. It is usually a governing body that dictates the terms of processes.",
+        "term": "Supervisory authority"
+      },
+      {
+        "description": "Information about transactions, for example in banking. Any information about banking transactions will be referred to as transactional data.",
+        "term": "Transactional data - banking"
+      },
+      {
+        "description": "Full disclosure on how data is used.",
+        "term": "Transparency"
+      }
+    ],
+    "itemNotFoundMessage": "No results found",
+    "searchWithInDescriptionLabel": "",
+    "searchPlaceholder": "",
+    "description": "Glossary of terms relating to GDPR",
+    "title": "Glossary",
+    "_isEnabled": true
+  },
+  "_pageLevelProgress": {
+    "_showPageCompletion": true,
+    "_isEnabled": true
+  }
+}

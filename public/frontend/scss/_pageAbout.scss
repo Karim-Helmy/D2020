@@ -1,0 +1,44 @@
+.about_all{
+  padding: 6rem 0 3rem;
+}
+.about_info{
+  background: #fff;
+  position: relative;
+  padding: 3rem 0;
+  margin-bottom: 6rem;
+
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+  .about_bg{
+    background:url('../images/circles.png') left top no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -25px;
+  }
+
+  h3{
+    font-family: $bold;
+    color: #F18168;
+    margin-bottom: 1rem;
+    
+  }
+  p{
+    color: #777;
+  }
+  .about_img{
+    text-align: right;
+  }
+  &:nth-of-type(even){
+    .about_bg{
+      background-position-x: right;
+    }
+    .row{
+      flex-direction: row-reverse;
+    }
+    .about_img{
+      text-align: left;
+    }
+  }
+}

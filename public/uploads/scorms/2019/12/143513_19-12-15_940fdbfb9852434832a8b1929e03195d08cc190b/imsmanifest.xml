@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="_5ukCIcrwWyV_course_id" version="1.0" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+      <general>
+        <title>
+          <langstring xml:lang="x-none">LMS365</langstring>
+        </title>
+        <description>
+          <langstring xml:lang="x-none">Introduction to LMS365</langstring>
+        </description>
+      </general>
+      <lifecycle>
+        <version>
+          <langstring xml:lang="x-none">2</langstring>
+        </version>
+        <status>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">Final</langstring>
+          </value>
+        </status>
+      </lifecycle>
+      <metametadata>
+        <metadatascheme>ADL SCORM 1.2</metadatascheme>
+      </metametadata>
+      <educational>
+        <typicallearningtime>
+          <datetime>PT0H0M0S</datetime>
+        </typicallearningtime>
+      </educational>
+      <rights>
+        <cost>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </cost>
+        <copyrightandotherrestrictions>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </copyrightandotherrestrictions>
+      </rights>
+    </lom>
+  </metadata>
+  <organizations default="LMS365_ORG">
+    <organization identifier="LMS365_ORG">
+      <title>LMS365</title>
+      <item identifier="LMS365_SCO" isvisible="true" identifierref="__5ukCIcrwWyV_course_id_RES">
+        <title>LMS365</title>
+        <adlcp:masteryscore>80</adlcp:masteryscore>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="__5ukCIcrwWyV_course_id_RES" type="webcontent" href="index_lms.html" adlcp:scormtype="sco">
+      <file href="story_content/thumbnail.jpg" />
+      <file href="story_content/Slide6iG9kNVNYpG.swf" />
+      <file href="story_content/64m5GOF7dYX_80_B-6_C1_DX1440_DY1440.jpg" />
+      <file href="mobile/64m5GOF7dYX_80_B-6_C1_DX1440_DY1440_CX720_CY405.jpg" />
+      <file href="story_content/6HoGZeEsSku_80_DX416_DY416.swf" />
+      <file href="mobile/6HoGZeEsSku_80_DX416_DY416_CX208_CY36.png" />
+      <file href="story_content/6juIOnXNwfP_80_DX364_DY364.swf" />
+      <file href="mobile/6juIOnXNwfP_80_DX364_DY364_CX182_CY40.png" />
+      <file href="story_content/Shape6cHgz9vSj3W.swf" />
+      <file href="story_content/61YwypEEp5t_80_DX1344_DY1344.jpg" />
+      <file href="mobile/61YwypEEp5t_80_DX1344_DY1344_CX128_CY128.jpg" />
+      <file href="story_content/63qzbpBg6YJ_80_DX1344_DY1344.jpg" />
+      <file href="mobile/63qzbpBg6YJ_80_DX1344_DY1344_CX128_CY128.jpg" />
+      <file href="story_content/6gHyhx1eXQv_80_DX1344_DY1344.jpg" />
+      <file href="mobile/6gHyhx1eXQv_80_DX1344_DY1344_CX128_CY128.jpg" />
+      <file href="story_content/6KXNHSnloOc_80_DX1344_DY1344.jpg" />
+      <file href="mobile/6KXNHSnloOc_80_DX1344_DY1344_CX672_CY296.jpg" />
+      <file href="meta.xml" />
+      <file href="story_content/frame.xml" />
+      <file href="story_content/frame.js" />
+      <file href="story_content/user.js" />
+      <file href="story_html5.html" />
+      <file href="story_unsupported.html" />
+      <file href="mobile/Slide6iG9kNVNYpG.jpg" />
+      <file href="mobile/Shape6cHgz9vSj3W.png" />
+      <file href="mobile/app_store.png" />
+      <file href="mobile/controls.png" />
+      <file href="mobile/icon_loading.gif" />
+      <file href="mobile/linen_background.jpg" />
+      <file href="mobile/mobile_icon.png" />
+      <file href="mobile/player.css" />
+      <file href="mobile/player_compiled.js" />
+      <file href="mobile/spinner.png" />
+      <file href="mobile/wait.gif" />
+      <file href="story_content/fonts.swf" />
+      <file href="mobile/fonts.js" />
+      <file href="story.swf" />
+      <file href="story_content/frame.swf" />
+      <file href="story_content/slides/6XGhHg8vn0q.swf" />
+      <file href="mobile/slides/6XGhHg8vn0q.js" />
+      <file href="story_content/slides/6gLg25T0ftQ.swf" />
+      <file href="mobile/slides/6gLg25T0ftQ.js" />
+      <file href="story_content/slides/635uaePXhfS.swf" />
+      <file href="mobile/slides/635uaePXhfS.js" />
+      <file href="story_content/slides/6XrT5bKZEkW.swf" />
+      <file href="mobile/slides/6XrT5bKZEkW.js" />
+      <file href="story_content/slides/6YQdrolJZtN.swf" />
+      <file href="mobile/slides/6YQdrolJZtN.js" />
+      <file href="story_content/slides/6oKFxrE1W3k.swf" />
+      <file href="mobile/slides/6oKFxrE1W3k.js" />
+      <file href="story_content/slides/6PPy02oQYYy.swf" />
+      <file href="mobile/slides/6PPy02oQYYy.js" />
+      <file href="story_content/data.swf" />
+      <file href="mobile/data.js" />
+      <file href="mobile/masks.js" />
+      <file href="story.html" />
+      <file href="index_lms_html5.html" />
+      <file href="story_content/blank.html" />
+      <file href="story_content/story.js" />
+      <file href="index_lms.html" />
+      <file href="lms/AICCComm.html" />
+      <file href="lms/AICCFunctions.js" />
+      <file href="lms/API.js" />
+      <file href="lms/APIConstants.js" />
+      <file href="lms/blank.html" />
+      <file href="lms/browsersniff.js" />
+      <file href="lms/Configuration.js" />
+      <file href="lms/goodbye.html" />
+      <file href="lms/lms.js" />
+      <file href="lms/LMSAPI.js" />
+      <file href="lms/NONEFunctions.js" />
+      <file href="lms/SCORM2004Functions.js" />
+      <file href="lms/SCORMFunctions.js" />
+      <file href="lms/UtilityFunctions.js" />
+    </resource>
+  </resources>
+</manifest>

@@ -1,0 +1,316 @@
+$trans: .2s ease-in-out;
+$reg: 'cairoReg';
+$sem: 'cairoSem';
+$bold: 'cairoBold';
+$color: #5F6BD5;
+$base-margin: 1rem;
+$grey: #777;
+
+/* iterations */
+@for $i from 1 through 10 {
+  .m-b-#{$i} {
+    margin-bottom:  $i + 0rem !important;
+  }
+  .m-t-#{$i}{
+    margin-top: $i + 0rem !important;
+  }
+}
+@for $i from 1 through 10 {
+  .p-b-#{$i} {
+    padding-bottom:  $i + 0rem !important;
+  }
+  .p-t-#{$i}{
+    padding-top: $i + 0rem !important;
+  }
+}
+
+/* font face */
+@font-face {
+  font-family: 'cairoReg';
+  src: url("../webfonts/Cairo/Cairo-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'cairoSem';
+  src: url("../webfonts/Cairo/Cairo-SemiBold.ttf");
+}
+@font-face {
+  font-family: 'cairoBold';
+  src: url("../webfonts/Cairo/Cairo-Bold.ttf");
+}
+/* General rules */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04); }
+
+.clearfix:after,
+.clearfix:before {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+ol,
+p,
+ul {
+  margin-bottom: 0; }
+ul.points{
+  padding-left: 24px;
+}
+ul.points li{
+  list-style-type: disc;
+}
+img {
+  max-width: 100%; }
+
+a:hover {
+  text-decoration: none; 
+}
+button{background: transparent}
+button:focus {
+  outline: 0 none; 
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0;
+  border-color: none;
+}
+
+body{
+  overflow-x: hidden;
+  font-family: $reg;
+  text-align: left;
+  scroll-behavior: smooth;
+}
+
+/* owl carousel css */
+.owl-carousel{
+  .owl-nav [class*=owl-]{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    margin: 0;
+    background: transparent;
+    border: 1px solid $color;
+    color: $color;
+    position: absolute;
+    padding: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    &:hover{
+      background: $color;
+      color: #fff;
+    }
+  }
+  .owl-nav{
+    margin-top: 0
+  }
+  .owl-prev{
+    right: 0;
+  }
+  .owl-next{
+    left: 0;
+  }
+}
+
+/* main btn */ 
+%main_btn, .main_btn{
+  min-width: 150px;
+  font-family: $sem;
+  height: 38px;
+  line-height: 35px;
+  color: #fff;
+  border-radius: 1.25rem;
+  background: $color;
+  display: inline-block;
+  transition: $trans;
+  text-align: center;
+  cursor: pointer;
+  &:hover{
+    background: #04082A;
+    color: #fff;
+  }
+}
+/* login */
+.page_wrapper{
+  background: #f3f3f3;
+}
+.our_breadcrumb{
+  background: url('../images/LEGO_BOOST_FOTO1_CAT_V351\ 2.jpg') center  no-repeat;
+  position: relative;
+  padding: 3rem 0;
+  text-align: center;
+  &:before{
+    content: '';
+    background: #F18168;
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  h1{
+    font-family: $bold;
+    position: relative;
+    color: #fff;
+    font-size: 2.375rem;
+  }
+  a, span{
+    color: #fff;
+    position: relative;
+  }
+  a:after{
+    content: '/';
+    margin: 0 .5rem;
+  }
+}
+
+
+$breadcrumbs-font-size: 1rem;
+$breadcrumbs-background: #fff;
+$breadcrumbs-text-color: $color;
+$breadcrumbs-current-bg: #f3f3f3;
+
+.bread_wrapper{
+  background: $color;
+}
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: $breadcrumbs-font-size;
+  padding: 3rem 0 3rem 1.3rem;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  margin-bottom: 0.5em;
+  padding: 0.25em;
+  background-color: $breadcrumbs-background;
+  color: $breadcrumbs-text-color;
+  
+  &:not(:first-child) {
+    margin-left: 2em;
+  }
+  
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: 1.5em;
+    background-color: $breadcrumbs-background;
+    clip-path: polygon(50% 50%, -50% -50%, 0 100%);
+  }
+  
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0.4em;
+    height: 100%;
+    width: 2em;
+    background-color: $breadcrumbs-background;
+    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 50% 50%, 0% 0%);
+    transform: translateX(-100%);
+    z-index: 0;
+  }
+  
+  &--is-current {
+    background-color: $breadcrumbs-current-bg;
+    
+    &:before,
+    &:after {
+      background-color: $breadcrumbs-current-bg;
+    }
+  }
+  
+  a {
+    color: currentColor;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: $bold;
+    padding-left: .5rem;
+    padding-right: 1.2rem;
+  }
+  span{
+    padding-left: .5rem;
+    padding-right: 1.2rem;
+  }
+}
+
+.stack-y {
+  & > * + * {
+    margin-top: 1rem;
+  }
+}
+
+.fz-large {
+  font-size: 1.5rem;
+}
+
+
+/* color */
+.lightred{
+  background: #F18168;
+}
+.lightgreen{
+  background: #55B34C;
+}
+.mauve{
+  background: #5F6BD5;
+}
+.orange{
+  background: #FBBC4E;
+}
+.babyBlue{
+  background: #6BC2EB;
+}
+
+
+
+
+
+
+
+
+
+
+
+@import 'header';
+@import 'about';
+@import 'courses';
+@import 'partners';
+@import 'footer';
+@import 'login';
+@import 'pricing';
+@import 'profile';
+@import 'course.details';
+@import 'exam';
+@import 'addCourse';
+@import 'question.add';
+@import 'pageAbout';
+@import 'animation';
+@import 'rtl';
+@import 'media';

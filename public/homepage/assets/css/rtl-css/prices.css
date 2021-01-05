@@ -1,0 +1,73 @@
+.display-none {
+  display: none;
+}
+
+#pricing-section .list-pricing__description li {
+  font-size: 15px;
+}
+#pricing-section .list-pricing__description li i {
+  margin-left: 10px;
+  color: #92d337;
+}
+#pricing-section .list-pricing__description li:nth-child(2) i {
+  color: #fd5f42;
+}
+#pricing-section .list-pricing__description li:nth-child(2) i {
+  color: #ad33c4;
+}
+
+#pricing-section .list-pricing {
+  margin-top: 0;
+}
+#section_contacts {
+  margin-bottom: 40px;
+}
+#section_contacts .row {
+  display: flex;
+  justify-content: center;
+}
+.prices-box_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(24, 27, 34, 0.7);
+}
+.prices-box .container {
+  display: flex;
+  justify-content: center;
+}
+.prices-box_row {
+  z-index: 1111;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.prices-box_col {
+  background: #fff;
+  /* margin-top: 600px; */
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  animation-duration: 0.5s;
+}
+.prices-box_close {
+  color: #444;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.prices-box_close:hover {
+  color: #fff;
+  background: #fd5f42;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+.prices-box_close:active {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}

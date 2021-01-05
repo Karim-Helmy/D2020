@@ -1,0 +1,72 @@
+{
+  "_defaultLanguage": "en",
+  "_defaultDirection": "ltr",
+  "_questionWeight": 1,
+  "_generateSourcemap": false,
+  "_forceRouteLocking": true,
+  "_id": "5af54c5bfb63a8474498703b",
+  "_courseId": "5af54c5afb63a84744987003",
+  "_drawer": {
+    "_duration": 400,
+    "_hideEasing": "easeInQuart",
+    "_showEasing": "easeOutQuart"
+  },
+  "_accessibility": {
+    "_isEnabled": false,
+    "_isDisabledOnTouchDevices": false,
+    "_shouldSupportLegacyBrowsers": true,
+    "_isTextProcessorEnabled": false,
+    "_isSkipNavigationEnabled": true
+  },
+  "screenSize": {
+    "large": 1024,
+    "medium": 759,
+    "small": 519
+  },
+  "__v": 0,
+  "_spoor": {
+    "_advancedSettings": {
+      "_commitOnVisibilityChangeHidden": true,
+      "_suppressErrors": false,
+      "_commitRetryDelay": 2000,
+      "_maxCommitRetries": 5,
+      "_timedCommitFrequency": 10,
+      "_commitOnStatusChange": true,
+      "_showDebugWindow": false
+    },
+    "_reporting": {
+      "_resetStatusOnLanguageChange": false,
+      "_onAssessmentFailure": "incomplete",
+      "_onTrackingCriteriaMet": "completed"
+    },
+    "_tracking": {
+      "_shouldRecordInteractions": true,
+      "_shouldStoreResponses": false,
+      "_shouldSubmitScore": false,
+      "_requireAssessmentPassed": false,
+      "_requireCourseCompleted": true
+    },
+    "_isEnabled": true
+  },
+  "_tutor": {
+    "_isEnabled": false
+  },
+  "build": {
+    "includes": [
+      "5476f54c473b97d73865412e-5af54c5afb63a84744987003",
+      "adapt-contrib-tutor",
+      "adapt-contrib-glossary",
+      "adapt-contrib-pageFooterNavigation",
+      "adapt-contrib-pageLevelProgress",
+      "adapt-contrib-spoor",
+      "adapt-contrib-narrative",
+      "adapt-contrib-blank",
+      "adapt-contrib-accordion",
+      "adapt-contrib-text",
+      "adapt-contrib-mcq",
+      "adapt-contrib-hotgraphic",
+      "adapt-contrib-graphic",
+      "adapt-contrib-flipcard"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+/* add question */
+
+.answer_panel{
+  position: relative;
+  .clear_answer{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #F18168;
+    color: #fff;
+    border-radius: 50%;
+    top: 22px;
+    right: 0;
+    cursor: pointer;
+  }
+  &:first-of-type, &:nth-of-type(2){
+    .clear_answer{
+      display: none;
+    }
+  }
+}
+.select_wrapper{
+  position: relative; 
+  width: 100%;
+  select{
+    appearance: none;
+  }
+  &:after{
+    content: "\f0d7";
+    font-family: 'font awesome 5 pro';
+    font-weight: 900;
+    position: absolute;
+    right: 15px;
+    color: #777;
+    top: 7px;
+  }
+}

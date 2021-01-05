@@ -1,0 +1,198 @@
+
+
+#services-page {
+  background-color: #f1f0f5;
+}
+
+#services-page header {
+  z-index: 2112;
+  background: #fff;
+}
+#services-page .bg-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  background-color: #f1f0f5;
+}
+
+/* #services-page .bg-overlay img {
+  width: 100%;
+} */
+#services-page .container-fluid {
+  padding: 40px 60px;
+}
+
+.services-people {
+  min-height: 100vh;
+  background-image: url(../images/services/bg_body.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.services-people ul {
+  position: relative;
+}
+
+.services-people ul li {
+  list-style: none;
+  position: absolute;
+}
+.services-people ul li:nth-child(5) {
+  left: 10%;
+  top: 330px;
+}
+.services-people ul li:nth-child(4) {
+  left: 28%;
+  top: 130px;
+}
+.services-people ul li:nth-child(3) {
+  left: 47%;
+  top: 200px;
+}
+.services-people ul li:nth-child(2) {
+  right: 23%;
+  top: 310px;
+}
+.services-people ul li:nth-child(1) {
+  right: 15%;
+  top: 360px;
+}
+.services-people ul li a {
+  position: relative;
+  /* transition: all 0.3s; */
+}
+.services-people ul li img {
+  /* height: 250px !important; */
+  /* height: 400px; */
+}
+.services-people ul li a:hover::after {
+  content: " مثال";
+  padding: 6px 30px;
+  position: absolute;
+  display: inline-block;
+  min-width: 60px;
+  min-height: 40px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 4px;
+  background-color: rgb(54, 54, 56);
+  animation: showText 0.3s forwards;
+  margin-top: 100px;
+  margin-left: -40px;
+}
+@keyframes showText {
+  0% {
+    display: none;
+    transform: translateX(-30px);
+  }
+  0% {
+    display: inline-block;
+    transform: translateX(30px);
+  }
+}
+.services-people ul li:nth-child(1) a:hover::after {
+  content: "Elementary";
+}
+.services-people ul li:nth-child(2) a:hover::after {
+  content: "Middle & High";
+}
+.services-people ul li:nth-child(3) a:hover::after {
+  content: "Teacher";
+}
+.services-people ul li:nth-child(4) a:hover::after {
+  content: "Leader / Supervisor";
+}
+.services-people ul li:nth-child(5) a:hover::after {
+  content: "Guardian";
+}
+
+.services-box {
+  z-index: 99;
+}
+.services-box_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 90;
+  background: rgba(24, 27, 34, 0.7);
+}
+.services-box .container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.services-box_row {
+  z-index: 1111;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.services-box_col {
+  background: #fff;
+  /* margin-top: 600px; */
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  animation-duration: 0.5s;
+  margin-top: 200px;
+}
+.services-box_close {
+  color: #444;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.services-box_close:hover {
+  color: #fff;
+  background: #fd5f42;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+.services-box_close:active {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 991px) {
+  .services-people ul li img {
+    height: 250px;
+  }
+  .services-people ul {
+    display: flex !important;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .services-people ul li {
+    position: static;
+    margin-bottom: 30px;
+  }
+  .services-people ul li img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-people ul {
+    display: flex !important;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .services-people ul li {
+    position: static;
+    margin-bottom: 30px;
+  }
+  .services-people ul li img {
+    height: 250px;
+  }
+}

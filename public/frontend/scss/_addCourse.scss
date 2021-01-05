@@ -1,0 +1,144 @@
+/* table add course */ 
+.table_options a{
+  padding: .1rem .5rem;
+  color: #fff;
+  border-radius: .5rem;
+  margin-left: 5px;
+  transition: $trans;
+  span{
+    margin-right: 5px;
+  }
+
+  &:first-of-type{
+    background: #FBBC4E;
+  }
+  &:nth-of-type(2){
+    background: #55B34C;
+  }
+  &:nth-of-type(3){
+    background: #5F6BD5;
+  }
+  &:nth-of-type(4){
+    background: #F18168;
+  }
+  &:hover{
+    background: #04082A
+  }
+}
+.our_main_table{
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  thead{
+    th{
+      font-family: $bold;
+      font-weight: normal;
+      padding: 1rem .75rem;
+    }
+  }
+  tbody{
+    tr:nth-of-type(even){
+      background: #ececec;
+    }
+    td{
+      padding: 1rem .75rem;
+    }
+  }
+}
+.main_title{
+  font-family: $sem;
+  color: #F18168;
+  display: inline-block;
+  border-bottom: 1px solid #04082A;
+  padding-bottom: .5rem;
+  margin-bottom: 0;
+}
+
+/* form add couse*/
+
+.form_wrapper{
+  background: #fff;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  &.nobox{
+    box-shadow: none;
+  }
+
+  .form-control{
+    background: #f3f3f3;
+    border-radius: 1.25rem;
+    margin-bottom: 1.25rem;
+    height: auto !important;
+
+  }
+  input.form-control:read-only{
+      background: #cacaca;
+      cursor: not-allowed;
+    
+  }
+  .icon_date{
+    position: absolute;
+    right: 29px;
+    top: 48px;
+    color: #F18168;
+    pointer-events: none;
+  }
+  label{
+    font-family: $sem;
+    &.req:before{
+      content: '*';
+      margin-right: 5px;
+      font-size: 1.25rem;
+      color: #F18168;
+    }
+  }
+  
+}
+.delete_line{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  background: #F18168;
+  font-size: 1.25rem;
+  color: #fff;
+  cursor: pointer;
+}
+.level_panel{
+  position: relative;
+}
+.level_panel:first-of-type{
+  .delete_line{
+    display: none;
+  }
+}
+.input_image{
+  position: relative;
+  input{
+    opacity: 0;
+    cursor: pointer;
+    width: 150px;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+  }
+  span{
+    color: #5F6BD5;
+    font-family: $sem;
+
+    border-radius: 1.25rem;
+    cursor: pointer;
+  }
+  i{
+    margin-left: 5px;
+  }
+  p{
+    color: #777;
+    margin-top: .5rem;
+  }
+  img{
+    width: 100px;
+    margin-left: 1rem;
+  }
+
+}

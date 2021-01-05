@@ -1,0 +1,36 @@
+/* exam page */
+
+.exam_question{
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+  h3{
+    font-family: $sem;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+  p{
+    margin-bottom: 1rem;
+  }
+}
+
+.exam_time{
+  background: #fff;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  color: #F18168;
+  border-radius: 50%;
+  text-align: center;
+  font-family: $bold;
+  font-size: 1.625rem;
+  position: sticky;
+  top: 0;
+}
+.card a{
+  color: $color;
+  font-family: $sem;
+}

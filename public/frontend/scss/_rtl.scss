@@ -1,0 +1,170 @@
+html[lang=ar]{
+  direction: rtl;
+  body{
+    text-align: right;
+    font-size: 15px;
+    direction: rtl;
+  }
+  .text-left{
+    text-align: left !important;
+  }
+  .our_topbar .lang, .our_topbar button{
+    margin-left: 0;
+    margin-right: 15px;
+    line-height: 43px;
+  }
+  .navbar .navbar-nav .nav-link{
+    font-size: 1.1rem;
+  }
+  .our_hero .hero_caption{
+    padding-left: 0;
+    padding-right: 2rem;
+  }
+  .our_hero .main_hero .hero_panel h3{
+    padding-left: 0;
+    padding-right: 2rem;
+    font-size: 1.625rem;
+  }
+  .owl-item .course_panel_caption{
+    right: 0;
+    left: 37px;
+  }
+  footer .footer_info i{
+    margin-right: 0;
+    margin-left: .5rem;
+  }
+  footer .footer_social a{
+    margin-left: 1rem;
+    margin-right: 0;
+  }
+  .about_info .about_img{
+    text-align: left;
+  }
+  .about_info .about_bg {
+    background-position-x: right;
+  }
+  .about_info:nth-of-type(even){
+    .about_bg{
+      background-position-x: left;
+    }
+    .about_img{
+      text-align: right;
+    }
+  }
+  .branch_bg{
+    padding-left: 0;
+    padding-right: 2rem;
+  }
+
+  .call_form p i{
+    margin-right: 0;
+    margin-left: .7rem;
+  }
+
+  .profile_details li i{
+    margin-right: 0;
+    margin-left: 1rem;
+  }
+  .profile .profile_menu a i{
+    margin-right: 0;
+    margin-left: 7px;
+  }
+  .ml-1{
+    margin-right: 0;
+    margin-left: .25rem;
+  }
+  .breadcrumbs__item:not(:first-child){
+    margin-right: 2em;
+    margin-left: 0;
+  }
+  .breadcrumbs__item:before{
+    right: -1.6em;
+    left: 0;
+    transform: rotate(180deg);
+  }
+  .breadcrumbs__item:after{
+    transform: rotate(180deg);
+    right: 100%;
+    left:0
+  }
+  .breadcrumbs__item a{
+    padding-right: .2rem;
+    padding-left: 1rem;
+  }
+  .form_wrapper label.req:before{
+    margin-left: 5px;
+    margin-right: 0;
+  }
+  .input_image i{
+    margin-left: 0;
+    margin-right: 5px;
+  }
+  .form_wrapper .icon_date{
+    right: auto;
+    left: 29px;
+  }
+  .select_wrapper:after{
+    right: auto;
+    left: 15px;
+  }
+
+  .ml-3, .mx-3 {
+    margin-left: 1rem !important;
+    margin-right: 0 !important;
+}
+.ml-2, .mx-2 {
+  margin-left: 0.5rem !important;
+  margin-right: 0 !important;
+}
+
+.answer_panel .clear_answer{
+  right: auto;
+  left: 0
+}
+.breadcrumbs{
+  padding: 3rem 1.3rem 3rem 0
+}
+.course_sidebar li i{
+  margin-right: 0;
+  margin-left: .5rem;
+}
+.instructor_details span{
+  margin-right: 0;
+  margin-left: 1rem;
+}
+.course_levels .btn-link{
+  text-align: right;
+}
+.course_levels .btn-link:after{
+  right: auto;
+  left: 0;
+}
+.course_sidebar li span:last-of-type{
+  margin-right: auto;
+  margin-left: 0;
+}
+.course_title {
+  font-size: 1.4rem;
+}
+ul.points{
+  padding-left: 0;
+  padding-right: 24px;
+}
+.addition a i{
+  margin-right: 0;
+  margin-left: .3rem;
+}
+.table_options a span{
+  margin-right: 0;
+  margin-left: 5px;
+}
+.about_info h3{
+  font-size: 1.4rem;
+}
+
+.exam_question p{
+  .checkbox_wrapper{
+    margin-left: .5rem;
+  }
+}
+}

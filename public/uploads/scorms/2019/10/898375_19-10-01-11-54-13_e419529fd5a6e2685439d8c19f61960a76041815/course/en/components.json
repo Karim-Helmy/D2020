@@ -1,0 +1,720 @@
+[
+  {
+    "_component": "narrative",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "title": "What is data transfer?",
+    "displayTitle": "",
+    "body": "<p><span style=\"color:#ffffff\">The school is storing pupils, parents and staff personal data so needs to adhere to the rules on sharing data. When transferring data, there are regulations that we must comply with.</span></p><p><strong>Click or tap on the arrows below to learn more.</strong></p>",
+    "_id": "5af54c5bfb63a84744987029",
+    "_parentId": "5af54c5afb63a8474498701d",
+    "_type": "component",
+    "_layout": "full",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "instruction": "",
+    "mobileInstruction": "",
+    "_hasNavigationInTextArea": false,
+    "_setCompletionOn": "allItems",
+    "_items": [
+      {
+        "title": "",
+        "body": "<p>GDPR imposes restrictions on the transfer of personal data outside the European Union, to other countries, or international organisations, to ensure that the level of protection of individuals provided by GDPR is not undermined.</p>",
+        "_graphic": {
+          "src": "course/assets/e53818abedafab1a836219fa5bd8df0edb86667f.png",
+          "alt": ""
+        },
+        "strapline": "Tap on + for info"
+      },
+      {
+        "title": "",
+        "body": "<p>You may transfer personal data where the organisation receiving the personal data has provided adequate safeguards. Individuals&rsquo; rights must be enforceable, and effective legal remedies for individuals must be available following the transfer.</p>",
+        "_graphic": {
+          "src": "course/assets/e88d9d3a4db39b77107722541c945948418bf7b7.png",
+          "alt": ""
+        },
+        "strapline": "Tap on + for info"
+      },
+      {
+        "title": "",
+        "body": "<p>Adequate safeguards may be provided by, for example, a legally binding agreement, data protection clauses, certification mechanisms, etc.</p>",
+        "_graphic": {
+          "src": "course/assets/f865b032dc78ec242f02cc5e9ac294c7d3d9a178.png",
+          "alt": ""
+        },
+        "strapline": "Tap on + for info"
+      }
+    ]
+  },
+  {
+    "_component": "blank",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "title": "Component title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5af54c5bfb63a8474498702a",
+    "_parentId": "5af54c5afb63a84744987028",
+    "_type": "component",
+    "_layout": "full",
+    "_pageLevelProgress": {
+      "_isEnabled": false
+    }
+  },
+  {
+    "_component": "accordion",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "title": "Conditions for lawful processing",
+    "displayTitle": "",
+    "body": "<p>Both Emily and the&nbsp;school want to ensure their operations are compliant with GDPR.&nbsp;</p><p>She now has some questions around lawful processing for Gary.</p><p><strong>Select the questions to find out what Gary has to say.</strong></p>",
+    "_id": "5af54c5bfb63a8474498702b",
+    "_parentId": "5af54c5afb63a84744987019",
+    "_type": "component",
+    "_layout": "full",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "title": "When am I allowed to process data?",
+        "body": "<p>Gary says, &quot;Knowing the circumstances under which you&rsquo;re allowed to process data is vital. First and foremost, processing is allowed when you have the <span><span><span><span style=\"color:#000000\">informed, specific </span></span></span></span>consent of the data subject.&quot;</p><p>Other circumstances where you are allowed to process data are:</p><ul><li>when processing is necessary for the performance of a contract with the data subject or to take steps to enter into a contract</li><li>when processing is necessary for compliance with a legal obligation or to protect the vital interests of a data subject or another person</li><li>when processing is necessary for the performance of a task carried out in the public interest or in the exercise of authority of the controller</li></ul><p><span style=\"color:#000000\"><span style=\"background-color:#ffffff\">There is an additional circumstance that applies to organisations that are not public sector, but this doesn&rsquo;t apply to the school:</span></span></p><ul><li>when necessary for the purposes of interests pursued by the controller or a third party, except where there are conflicts with the interests, rights, or freedoms of the data subject.</li></ul>",
+        "_graphic": {
+          "alt": "",
+          "src": "",
+          "attribution": ""
+        },
+        "_classes": ""
+      },
+      {
+        "_classes": "",
+        "_graphic": {
+          "attribution": "",
+          "src": "",
+          "alt": ""
+        },
+        "body": "<p>There are conditions that you must put in place before processing data.</p><p>These are as follows.</p><ul><li>data processing agreements&nbsp;&ndash; processors may only process personal data on behalf of a controller where a written contract is in place which imposes a number of mandatory terms on the data processor, as set out in the GDPR</li><li>sub-processors &ndash; processors may not engage a sub-processor without the prior written authorisation of the controller; remember, even use of 3<sup>rd</sup> party services to store data counts as a sub-processor e.g. cloud computing</li><li>controller instructions &ndash; processors may only process personal data in accordance with the instructions of the controller</li><li>accountability &ndash; processors must maintain records of data processing activities and make these available to the supervisory authority on request.</li></ul>",
+        "title": "What do I need to do before processing data?"
+      }
+    ],
+    "_shouldCollapseItems": true
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "title": "What is data processing? ",
+    "displayTitle": "",
+    "body": "<p><span style=\"color:#ffffff\">Data processing is defined as any operation performed on personal data, whether by automated means or otherwise, including collection, use, recording, etc.</span></p><p><span style=\"color:#ffffff\">In the case of a school, for example, processing applies to recording data about pupils and using it in any manner.</span></p>",
+    "_id": "5af54c5bfb63a8474498702c",
+    "_parentId": "5af54c5afb63a8474498701a",
+    "_type": "component",
+    "_layout": "left",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "narrative",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "title": "Consent to use data",
+    "displayTitle": "",
+    "body": "<p><span style=\"color:#ffffff\">Remember Emily, who we met in part 1? She works for a company who store schools data on behalf of the school of which Gary is head teacher.</span></p><p><span style=\"color:#ffffff\">Emily is aware that the General Data Protection Regulation (GDPR) is coming into force, so, in order to prepare, she contacts Gary.</span></p><p><span style=\"color:#ffffff\">Gary has already undertaken some training and is well placed to guide and advise Emily. Emily&#39;s first question is around consent to use data.&rdquo;</span></p><p><span style=\"color:#ffffff\"><strong>Click or tap the arrows to see how Gary answers Emily&#39;s questions about GDPR.</strong></span></p>",
+    "_id": "5af54c5bfb63a8474498702d",
+    "_parentId": "5af54c5afb63a84744987018",
+    "_type": "component",
+    "_layout": "full",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "instruction": "",
+    "mobileInstruction": "",
+    "_hasNavigationInTextArea": false,
+    "_setCompletionOn": "allItems",
+    "_items": [
+      {
+        "title": "",
+        "body": "<p>Emily: &quot;Under GDPR, it states that consent must be freely given, and be an informed and definite indication of the individual&#39;s wishes. What does this actually mean?&quot;</p>",
+        "_graphic": {
+          "src": "course/assets/ae5130c71f9f77af3f00e4bd98d50fc364217a2d.png",
+          "alt": ""
+        },
+        "strapline": "Tap on + for info"
+      },
+      {
+        "title": "",
+        "body": "<p><span style=\"color:#ffffff\">&quot;This really means that there must be some form of clear affirmative action &ndash; a positive opt-in, the&nbsp;data subject&nbsp;understands what they are consenting to, and there can be no detriment to the data subject if they don&rsquo;t consent. So, it&rsquo;s important for us to document a data subject&#39;s&nbsp;consent and pass that to you when they make a request. As many of our data subjects are pupils under 18, we generally have the consent of their parents rather than the pupils as data subjects.&quot;</span></p>",
+        "_graphic": {
+          "src": "course/assets/bf3680b10fe17bd8bdd9cb1554255a58f2e53723.png",
+          "alt": ""
+        },
+        "strapline": "Tap on + for info"
+      },
+      {
+        "title": "",
+        "body": "<p><span style=\"color:#ffffff\">Emily: &ldquo;So how will we do that?&rdquo;</span></p><p><span style=\"color:#ffffff\">Gary: &ldquo;For example, we will replace the pre-ticked opt-in boxes, and give parents the option of choosing how they would like us to use their data by having separate consent options for each thing we do that isn&rsquo;t a legal requirement. If they don&rsquo;t opt in we can&rsquo;t use their data for anything else except that allowed to us under the various laws such as the Education Act.&rdquo;</span></p>",
+        "_graphic": {
+          "src": "course/assets/8821fdf9cdaa7fa2bd268096b8ea82961714f3ff.png",
+          "alt": ""
+        },
+        "strapline": "Tap on + for info"
+      },
+      {
+        "title": "",
+        "body": "<p><span style=\"color:#ffffff\">Gary: &ldquo;We both need to comply with GDPR&rsquo;s standard on consent. This ensures that data subjects are covered when it comes to giving permission to use their information. We don&rsquo;t need consent to use their data for the legal purposes of the school as that&rsquo;s covered by law, but we need consent for some non-statutory areas.&rdquo;</span></p>",
+        "_graphic": {
+          "src": "course/assets/ad27db6a054900391a06fedbd009bf9f51e59ee1.png",
+          "alt": ""
+        },
+        "strapline": "Tap on + for info"
+      },
+      {
+        "title": "",
+        "body": "<p>Gary: &ldquo;It&#39;s important to note that when it comes to GDPR standard, consent must be specific, clear, properly documented, and easily withdrawn.&nbsp;</p><p>&quot;If this isn&rsquo;t the case, we should update our consent mechanism before seeking consent again.&rdquo;</p>",
+        "_graphic": {
+          "src": "course/assets/89ee97b3829513054542997e2a617c691bc9c56d.png",
+          "alt": ""
+        },
+        "strapline": "Tap on + for info"
+      }
+    ]
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "title": "What should Gary do?",
+    "displayTitle": "",
+    "body": "<p>it&#39;s important that Gary&nbsp;is wary when handling personal information.</p><p>What must&nbsp;Gary do to avoid infringing any individual rights?</p><p><strong>Select all that apply and click or tap Submit.</strong></p>",
+    "_id": "5af54c5bfb63a8474498702e",
+    "_parentId": "5af54c5afb63a8474498701c",
+    "_type": "component",
+    "_layout": "full",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "Include a privacy notice",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Tell data subjects how their data will be used",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Tell data subjects what data is held about them",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Erase pupil details as soon as a pupil leaves the school",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": true,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": true,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 4,
+    "_feedback": {
+      "correct": "<p><span style=\"color:#ffffff\">Well done, that&rsquo;s correct! Storage of pupil details for the period we&rsquo;re allowed to keep them does not breach any individual rights, so long as the data is not excessive for its purpose.</span></p>",
+      "_incorrect": {
+        "final": "<p><span style=\"color:#ffffff\">That&rsquo;s not quite right. Storage of pupil details for the period we&rsquo;re allowed to keep them does not breach any individual rights, so long as the data is not excessive for its purpose.</span></p>",
+        "notFinal": "<p><span style=\"color:#ffffff\">That&rsquo;s not quite right. Storage of pupil details for the period we&rsquo;re allowed to keep them does not breach any individual rights, so long as the data is not excessive for its purpose.</span></p>"
+      },
+      "_partlyCorrect": {
+        "final": "<p><span style=\"color:#ffffff\">That&rsquo;s not quite right. Storage of pupil details for the period we&rsquo;re allowed to keep them does not breach any individual rights, so long as the data is not excessive for its purpose.</span></p>",
+        "notFinal": "<p><span style=\"color:#ffffff\">That&rsquo;s not quite right. Storage of pupil details for the period we&rsquo;re allowed to keep them does not breach any individual rights, so long as the data is not excessive for its purpose.</span></p>"
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "hotgraphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "title": "When can data be transferred?",
+    "displayTitle": "",
+    "body": "<p>Under GDPR, exemptions can be made to enable the transfer of personal data outside the EU in certain situations.</p><p>Click or tap on the pins to learn more.</p>",
+    "_id": "5af54c5bfb63a8474498702f",
+    "_parentId": "5af54c5afb63a8474498701e",
+    "_type": "component",
+    "_layout": "full",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "instruction": "",
+    "_graphic": {
+      "src": "course/assets/ab801b4bf3951aa2e12248095fbdf5c82030a021.png",
+      "alt": ""
+    },
+    "mobileBody": "<p>Under GDPR, exemptions can be made to enable the transfer of personal data outside the EU in certain situations.</p><p>Tap on the arrows to scroll between key points.</p>",
+    "mobileInstruction": "",
+    "_hidePagination": false,
+    "_canCycleThroughPagination": true,
+    "_useGraphicsAsPins": false,
+    "_items": [
+      {
+        "title": "",
+        "body": "<p>Transfers can be made with the individual&rsquo;s informed consent.</p>",
+        "strapline": "Tap on '+' for more information",
+        "_graphic": {
+          "src": "course/assets/f55267d14cd333a15770c733bba01949dfb7d26a.png",
+          "alt": "",
+          "title": "",
+          "_classes": ""
+        },
+        "_classes": "",
+        "_left": 8.416503189594545,
+        "_top": 39.310778472059056
+      },
+      {
+        "title": "",
+        "body": "<p>Transfers may be made when necessary for the performance of a contract between the individual and the organisation, or for pre-contractual steps taken at the individual&rsquo;s request.</p><p>Transfers may&nbsp;also be made for a contract made in the interests of the individual between the controller and another person.</p>",
+        "strapline": "Tap on '+' for more information",
+        "_graphic": {
+          "src": "course/assets/5799c22e9799d099674e2ab59d6e44ed4033708b.png",
+          "alt": "",
+          "title": "",
+          "_classes": ""
+        },
+        "_classes": "",
+        "_left": 47.26244174213666,
+        "_top": 42.621989981838006
+      },
+      {
+        "title": "",
+        "body": "<p>Transfers can be made when necessary for the establishment, exercise or defence of legal claims, or for important reasons of public interest.&nbsp;</p>",
+        "strapline": "Tap on '+' for more information",
+        "_graphic": {
+          "src": "course/assets/fab50988be70f971b545f2e7aaf4be672e1fe094.png",
+          "alt": "",
+          "title": "",
+          "_classes": ""
+        },
+        "_classes": "",
+        "_left": 86.24428974905592,
+        "_top": 39.18964127848919
+      },
+      {
+        "title": "",
+        "body": "<p>Transfers can be made when necessary to protect the vital interests of the data subject or other persons, where the data subject is physically or legally incapable of giving consent.</p>",
+        "strapline": "Tap on '+' for more information",
+        "_graphic": {
+          "src": "course/assets/95aa8cc61316396fa075b4872bcd4d00760edfcc.png",
+          "alt": "",
+          "title": "",
+          "_classes": ""
+        },
+        "_classes": "",
+        "_left": 28.503141197906317,
+        "_top": 84.21052631578947
+      },
+      {
+        "title": "",
+        "body": "<p>Transfers can be made when they are from a register which under UK or EU law is intended to provide information to the public.</p>",
+        "strapline": "Tap on '+' for more information",
+        "_graphic": {
+          "src": "course/assets/75cbeb2397d4e8e72b3bca69c3d312c6110c041a.png",
+          "alt": "",
+          "title": "",
+          "_classes": ""
+        },
+        "_classes": "",
+        "_left": 66.99860548553168,
+        "_top": 84.21052631578947
+      }
+    ]
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "title": "One-off transfers",
+    "displayTitle": "",
+    "body": "<p>Under GDPR, if there is no commission to authorise transfers, or if none of the exemptions apply, or you can&rsquo;t prove that individuals&#39;&nbsp;rights are protected, there are still instances where transfers may be made outside the EU. Generally, these transfers are not available to the&nbsp;schools or its service providers.</p><p>Transfers under the above circumstances are permitted only where the transfer:</p><ul><li>is not being made by a public authority in the exercise of its public powers</li><li>is not repetitive and involves only a limited number of individuals</li><li>is necessary for the purposes of the compelling legitimate interests of the organisation</li><li>is protected by safeguards that the organisation has put in place to keep the personal data safe.&nbsp;</li></ul><p>In these cases, organisations must inform the relevant supervisory authority of the transfer and provide additional information to individuals.</p>",
+    "_id": "5af54c5bfb63a84744987030",
+    "_parentId": "5af54c5afb63a84744987020",
+    "_type": "component",
+    "_layout": "full",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "title": "Can you help Gary?",
+    "displayTitle": "",
+    "body": "<p><span style=\"color:#ffffff\">Gary would like to share the personal data of parents with a marketing company in the US who offer training to parents on managing engagement with the school of their children. He is hoping that the marketing company will help him target boost take-up of school assistance to parents and reduce pupil absences.</span></p><p><span style=\"color:#ffffff\">When parents register their children, they fill in a form that states we are using the data for education purposes.</span></p><p><span style=\"color:#ffffff\">Bearing this in mind, do you think Gary is allowed to share the personal data of parents?</span></p><p>Select the correct option then Submit.</p>",
+    "_id": "5af54c5bfb63a84744987031",
+    "_parentId": "5af54c5afb63a84744987021",
+    "_type": "component",
+    "_layout": "full",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "Yes",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "No",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": true,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 1,
+    "_feedback": {
+      "correct": "<p><span style=\"color:#ffffff\">Well done, that&rsquo;s correct!</span></p><p><span style=\"color:#ffffff\">Gary should not share the personal data of the parents as he has not yet received consent to do so.</span></p><p><span style=\"color:#ffffff\">If he would like to share parents&rsquo; personal data for this purpose, it is essential to first get consent &ndash; for example, he could add an opt-in box to the registration process.</span></p>",
+      "_incorrect": {
+        "final": "<p><span style=\"color:#ffffff\">That&rsquo;s not correct.</span></p><p><span style=\"color:#ffffff\">Gary should not share the personal data of the parents as he has not yet received consent to do so.</span></p><p><span style=\"color:#ffffff\">If he would like to share parents&rsquo; personal data for this purpose, it is essential to first get consent &ndash; for example, he could add an opt-in box to the registration process.</span></p>",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "<p>That&rsquo;s not correct. Gary should not share the personal data of the customers as he has not yet received consent to do so.</p><p>If he would like to share customers&rsquo; personal data, it is essential to first get consent &ndash; for example, he could add an opt-in box to the registration details stage of the web process.</p>",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "blank",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "title": "Component title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5af54c5bfb63a84744987032",
+    "_parentId": "5af54c5afb63a84744987024",
+    "_type": "component",
+    "_layout": "full",
+    "_pageLevelProgress": {
+      "_isEnabled": false
+    }
+  },
+  {
+    "_component": "blank",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "title": "Component title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5af54c5bfb63a84744987033",
+    "_parentId": "5af54c5afb63a84744987026",
+    "_type": "component",
+    "_layout": "full",
+    "_pageLevelProgress": {
+      "_isEnabled": false
+    }
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "title": "Conclusion",
+    "displayTitle": "",
+    "body": "<p>You&rsquo;ve now reached the end of this course on data handling rules.</p><p>Throughout the course you&rsquo;ve learned about collecting, processing, storing, and transferring data.&nbsp;</p><p>You should now be able to:</p><ul><li>explain the requirement of consent</li><li>explain what data processing is and what rights individuals have</li><li>explain data transfer and data storage</li><li>list the conditions for data processing, transfer, and storage</li><li>list the special provisions for collecting, storing, and processing children&#39;s personal data in GDPR.</li></ul><p>&nbsp;</p><p>&nbsp;</p><p style=\"text-align: center;\">This eLearning course&nbsp;is now complete, well done. To exit, simply close this window.</p><p style=\"text-align: center;\">Thank you</p>",
+    "_id": "5af54c5bfb63a84744987034",
+    "_parentId": "5af54c5afb63a84744987022",
+    "_type": "component",
+    "_layout": "full",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "title": "What is data processing?",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5af54c5bfb63a84744987035",
+    "_parentId": "5af54c5afb63a8474498701a",
+    "_type": "component",
+    "_layout": "right",
+    "_pageLevelProgress": {
+      "_isEnabled": false
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "course/assets/879491533a8b913b8649be073b8812819201ca4d.PNG",
+      "small": "course/assets/879491533a8b913b8649be073b8812819201ca4d.PNG",
+      "attribution": ""
+    }
+  },
+  {
+    "_component": "flipcard",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "title": "Data storage individual rights",
+    "displayTitle": "",
+    "body": "<p><strong>Click or tap on the images below to learn more about individuals&#39; rights in relation to data storage.</strong></p>",
+    "_id": "5af54c5bfb63a84744987036",
+    "_parentId": "5af54c5afb63a84744987023",
+    "_type": "component",
+    "_layout": "full",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "_items": [
+      {
+        "_flipDirection": "horizontal",
+        "frontImage": {
+          "alt": "",
+          "src": "course/assets/4601a11e2e4fd50c8007fa467e2332c498c18727.png"
+        },
+        "backTitle": "Right to rectification",
+        "backBody": "<p>Individuals are entitled to have personal data rectified if it is inaccurate or incomplete.</p><p>If you have disclosed the personal data in question to third parties, you must inform them of the rectification where possible. You must also inform the individuals about the third parties to whom the data has been disclosed, where appropriate.</p>"
+      },
+      {
+        "backBody": "<p>The right to erasure is also known as &lsquo;the right to be forgotten&rsquo;. The broad principle underpinning this right is to enable an individual to request the deletion or removal of personal data where&nbsp;there is no compelling reason for its continued processing.</p><p>You can read more about the right to erasure <a href=\"https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/individual-rights/right-to-erasure/\" target=\"_blank\">here</a>, on the ICO website.</p>",
+        "backTitle": "Right to erasure",
+        "frontImage": {
+          "src": "course/assets/222d71f21522daae3c1de2e062f0b0a8fb335506.png",
+          "alt": ""
+        },
+        "_flipDirection": "horizontal"
+      }
+    ],
+    "_flipTime": 400,
+    "_flipType": "allFlip",
+    "instruction": ""
+  },
+  {
+    "_component": "narrative",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "title": "Data processing individual rights",
+    "displayTitle": "",
+    "body": "<p>Emily has been researching privacy notices and has established that they outline who you are, what you intend to use the customer&rsquo;s information for, and who else will have access to their information.</p><p>Even with consent, individual rights give the customer control over the use of their information.</p><p><strong>Click or tap on the arrows to&nbsp;learn more about individual rights.</strong></p>",
+    "_id": "5af54c5bfb63a84744987037",
+    "_parentId": "5af54c5afb63a8474498701b",
+    "_type": "component",
+    "_layout": "full",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "instruction": "",
+    "mobileInstruction": "",
+    "_hasNavigationInTextArea": false,
+    "_setCompletionOn": "allItems",
+    "_items": [
+      {
+        "title": "Right to be informed",
+        "body": "<p><span style=\"color:#ffffff\">The right to be informed refers to your duty to provide &#39;fair processing information&#39;, typically through a privacy notice. For example, this refers to letting a parent know exactly how their information is used when they fill in a form for us. However, there are exemptions to this right for certain matters, for example safeguarding.</span></p>",
+        "_graphic": {
+          "src": "course/assets/d5df4ec7009c4f9c768b3c902bf0855c6aa6e111.png",
+          "alt": ""
+        },
+        "strapline": "Tap on + for info"
+      },
+      {
+        "title": "Right to access",
+        "body": "<p><span style=\"color:#ffffff\">Under GDPR, individuals will have the right to get confirmation that their data is being processed, access to their personal data, and other additional information. This must be provided in an easily accessible electronic form.</span></p><p><span style=\"color:#ffffff\">The additional information generally relates to the information provided in a privacy notice. Individuals do not have to pay a fee to access the information in most cases. There are exceptions to this for certain kinds of data including exam results.</span></p>",
+        "_graphic": {
+          "src": "course/assets/cb006409707d7644bb1e241356f34eb574691381.png",
+          "alt": ""
+        },
+        "strapline": "Tap on + for info"
+      },
+      {
+        "strapline": "Tap on + for info",
+        "_graphic": {
+          "alt": "",
+          "src": "course/assets/9710b5bea1585766c93270af396938541dc35941.png"
+        },
+        "body": "<p>Under GDPR, individuals have a right to &lsquo;block&rsquo; or suppress processing of personal data.</p><p>When processing is restricted, you&rsquo;re allowed to store the personal data, but you&rsquo;re not allowed to continue using it. Retaining a limited amount of information about the individual will still respect the <span style=\"color:#ffffff\">restriction in future.</span></p><p><span style=\"color:#ffffff\">There are exemptions to this right in some cases where processing is legally required.</span></p>",
+        "title": "Right to restrict processing"
+      },
+      {
+        "title": "Right to data portability",
+        "body": "<p>The right to data portability allows individuals to obtain and reuse their personal data for their own purposes across different services.</p><p>It allows them to move, copy, or transfer personal data easily from one IT environment to another in a safe and secure way, without hindrance to usability.</p>",
+        "_graphic": {
+          "src": "course/assets/27dea99fd5c8652853f7471685744a7aec8f1120.png",
+          "alt": ""
+        },
+        "strapline": "Tap on + for info"
+      },
+      {
+        "title": "Right to object",
+        "body": "<p><span style=\"color:#ffffff\">Individuals have the right to object to their data being processed in any way other than the original purpose.</span></p><p><span style=\"color:#ffffff\">For example, we can&rsquo;t use a parent&rsquo;s mobile to text them details about a school play unless we have specific consent &ndash; and the parent can withdraw that consent at any time.</span></p>",
+        "_graphic": {
+          "src": "course/assets/5d3cdc3e4d191a5cca2c28ab02d707b55da8e843.png",
+          "alt": ""
+        },
+        "strapline": "Tap on + for info"
+      },
+      {
+        "strapline": "Tap on + for info",
+        "_graphic": {
+          "alt": "",
+          "src": "course/assets/bdb420763c9762795d986d5fd7c3089becdee5ca.png"
+        },
+        "body": "<p>GDPR provides safeguards for individuals against the risk that a damaging decision can be made without human intervention.</p><p><span style=\"color:#ffffff\">You should look at any of your current processing operations, particularly those that use automated decision making, and think about whether these should be updated to deal with the requirements of GDPR. There are, again, exemptions to this right in some cases where processing is legally required.</span></p>",
+        "title": "Right related to automated decision making and profiling"
+      }
+    ]
+  },
+  {
+    "_component": "flipcard",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "title": "Children's personal data",
+    "displayTitle": "",
+    "body": "<p><span style=\"color:#ffffff\">As schools, most of the data we handle is about children There&rsquo;s a couple of special additional rules on handling children&rsquo;s data we need to be aware of.</span></p><p><strong>Click or tap on the images to learn more.</strong></p>",
+    "_id": "5af54c5bfb63a84744987038",
+    "_parentId": "5af54c5afb63a8474498701f",
+    "_type": "component",
+    "_layout": "full",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "instruction": "",
+    "_flipType": "allFlip",
+    "_flipTime": 400,
+    "_items": [
+      {
+        "_flipDirection": "horizontal",
+        "frontImage": {
+          "alt": "",
+          "src": "course/assets/e2c151fffb9d2ab2215b138cf845c8b96591d340.png"
+        },
+        "backTitle": "Privacy notices for children",
+        "backBody": "<p><span style=\"color:#ffffff\">Children over 13 in the UK (16 in some other countries) can give consent to certain services particularly &ldquo;information society services&rdquo; such as social media.</span></p><p><span style=\"color:#ffffff\">This doesn&rsquo;t generally apply to schools services, but it&rsquo;s important to know.</span></p><p><span style=\"color:#ffffff\">Privacy notices for these services must be written in a way that can be understood by people of this age. It&rsquo;s good practice even if we are not relying on a child&rsquo;s consent to be this clear in all our consents.</span></p>"
+      },
+      {
+        "_flipDirection": "horizontal",
+        "frontImage": {
+          "alt": "",
+          "src": "course/assets/c0aff97766fee734783a3c5dfd54e1ed655c9ca2.png"
+        },
+        "backTitle": "Online services offered to children",
+        "backBody": "<p><span style=\"color:#ffffff\">If consent is your basis for processing, and the service is not an &ldquo;information society service&rdquo;, a child under the age of 16 can&rsquo;t give that consent themselves, and instead consent is required from a parent or guardian. &nbsp;</span></p><p><span style=\"color:#ffffff\">This does not apply to most services provided by schools, which do not rely on consent. However, some things we do which are optional and not required by law do have consent needs.</span></p><p><span style=\"color:#ffffff\">Parental/guardian consent is not required where the processing is related to preventative or counselling services offered directly to a child.</span></p>"
+      }
+    ]
+  },
+  {
+    "_component": "blank",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "title": "Component title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5af54c5bfb63a84744987039",
+    "_parentId": "5af54c5afb63a84744987027",
+    "_type": "component",
+    "_layout": "full",
+    "_pageLevelProgress": {
+      "_isEnabled": false
+    }
+  },
+  {
+    "_component": "blank",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "title": "Component title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5af54c5bfb63a8474498703a",
+    "_parentId": "5af54c5afb63a84744987025",
+    "_type": "component",
+    "_layout": "full",
+    "_pageLevelProgress": {
+      "_isEnabled": false
+    }
+  }
+]

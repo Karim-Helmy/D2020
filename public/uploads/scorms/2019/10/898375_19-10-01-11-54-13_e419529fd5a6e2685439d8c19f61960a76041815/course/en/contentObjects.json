@@ -1,0 +1,71 @@
+[
+  {
+    "title": "Collecting and processing data",
+    "displayTitle": "Collecting and processing data",
+    "body": "<p>Individual&nbsp;consent and the parameters for lawful processing of data.</p>",
+    "_classes": "background-image1 background-colour1",
+    "_lockType": "",
+    "linkText": "View",
+    "duration": "",
+    "_lockedBy": [],
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_id": "5af54c5afb63a84744987004",
+    "_graphic": {
+      "alt": "",
+      "src": ""
+    },
+    "_parentId": "course",
+    "_type": "page",
+    "_pageLevelProgress": {
+      "_showPageCompletion": true,
+      "_isEnabled": true
+    }
+  },
+  {
+    "title": "Storing and Transferring data",
+    "displayTitle": "Storing and Transferring data",
+    "body": "<p>Storing, data transfer and individual rights to data storage.</p>",
+    "_classes": "background-image1 background-colour2",
+    "_lockType": "",
+    "linkText": "View",
+    "duration": "",
+    "_lockedBy": [],
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_id": "5af54c5afb63a84744987005",
+    "_graphic": {
+      "alt": "",
+      "src": ""
+    },
+    "_parentId": "course",
+    "_type": "page",
+    "_pageLevelProgress": {
+      "_showPageCompletion": true,
+      "_isEnabled": true
+    }
+  },
+  {
+    "title": "Children's data",
+    "displayTitle": "Children's data",
+    "body": "<p>How children&rsquo;s data should be treated.</p>",
+    "_classes": "background-image1 background-colour3",
+    "_lockType": "",
+    "linkText": "View",
+    "duration": "",
+    "_lockedBy": [],
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_id": "5af54c5afb63a84744987006",
+    "_graphic": {
+      "alt": "",
+      "src": ""
+    },
+    "_parentId": "course",
+    "_type": "page",
+    "_pageLevelProgress": {
+      "_showPageCompletion": true,
+      "_isEnabled": true
+    }
+  }
+]

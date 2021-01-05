@@ -1,0 +1,60 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Academica
+Version:	1.0
+Assigned to:	Templines
+Primary use:	Academica
+-------------------------------------------------------------------*/
+
+/* FONTS*/
+
+/* @import url("https://fonts.googleapis.com/css?family=Cairo:300,400,600,700&display=swap"rel="stylesheet"); */
+@import url("../../fonts/font-awesome/css/font-awesome.min.css");
+@import url("../../fonts/stroke/style.css");
+
+/* PLUGIN CSS */
+
+@import url("../../plugins/sliderpro/css/slider-pro.css");
+@import url("../../plugins/bootstrap/css/bootstrap-rtl.min.css");
+@import url("../../plugins/isotope/isotope.css");
+@import url("../../plugins/validation/validation-2.2.min.css");
+/* @import url('../../plugins-rtl/owl-carousel/owl.carousel.css');
+@import url('../../plugins-rtl/owl-carousel/owl.transitions.css');
+@import url('../../plugins-rtl/owl-carousel/owl.theme.css'); */
+@import url("../../plugins-rtl/owl-carousel/assets/owl.carousel.min.css");
+@import url("../../plugins-rtl/owl-carousel/assets/owl.theme.default.min.css");
+@import url("../../plugins/prettyphoto/css/prettyPhoto.css");
+@import url("../../plugins-rtl/yamm/yamm.css");
+@import url("../../plugins/datetimepicker/jquery.datetimepicker.css");
+@import url("../../plugins/animate/animate.css");
+@import url("../../plugins/jelect/main.css");
+
+/* MAIN CSS */
+@import url("theme.css");
+@import url("sidebar.css");
+@import url("blog.css");
+@import url("responsive.css");
+@import url("color.css");
+@import url("debugging.css");
+
+/* pages  */
+@import url("prices.css");
+@import url("services.css");
+
+
+@font-face {
+  font-family: "cairoReg";
+  /* src: url("../../fonts/Cairo/Cairo-Regular.ttf"); */
+  src: url("../../fonts/Cairo/Cairo-Regular.ttf");
+}
+
+@font-face {
+  font-family: "cairoSem";
+  src: url("../../fonts/Cairo/Cairo-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "cairoBold";
+  src: url("../../fonts/Cairo/Cairo-Bold.ttf");
+}
