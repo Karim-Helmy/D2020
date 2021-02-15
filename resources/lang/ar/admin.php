@@ -192,6 +192,21 @@ return [
 
 
 
+    'add product' => 'إضافة منتج',
+    'Add Products' => 'إضافة منتج',
+    'edit product' => 'تعديل منتج',
+    'show product' => 'عرض منتج',
+    'show all products' => 'عرض جميع المنتجات',
+    'all product' => 'جميع المنتجات',
+    'product' => 'منتج',
+    'products' => 'المنتجات',
+    'Products' => 'المنتجات',
+
+
+
+    'all order' => 'جميع الطلبات',
+    'orders' => 'الطلبات',
+
     'Show All Subscribers' => 'عرض كل اصحاب المحلات',
     'show all subscribers' => 'عرض كل اصحاب المحلات',
     'subscriber' => 'صاحب المحل',

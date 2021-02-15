@@ -2,17 +2,15 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\City;
-use App\Subscriber;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Stage;
-use App\StageImages;
-use App\Category;
+use App\Product;
+use App\ProductImages;
 use Carbon\Carbon;
 use File;
 use Image;
-class StagesController extends Controller
+class ProductsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,9 +25,9 @@ class StagesController extends Controller
             ]);
         }
 
-        return view('admin.stages.index', [
-            'title' => trans("admin.show all stages"),
-            'index' => Stage::all()
+        return view('admin.products.index', [
+            'title' => trans("admin.show all products"),
+            'index' =>Product::all()
         ]);
     }
 
@@ -45,15 +43,11 @@ class StagesController extends Controller
                 'error' => trans('عفوا ليس لديك الصلاحية لمشاهدة هذه الصفحة'),
             ]);
         }
-        $subscribers = Subscriber::all();
-        $categories = Category::all();
-        $cities = City::all();
+        $stages = Stage::all();
 
-        return view('admin.stages.create', [
-            'title' => trans("admin.add stage"),
-            'categories' => $categories,
-            'subscribers' => $subscribers,
-            'cities' => $cities,
+        return view('admin.products.create', [
+            'title' => trans("admin.add product"),
+            'stages' => $stages,
 
         ]);
     }
@@ -78,16 +72,12 @@ class StagesController extends Controller
        $this->rules['description'] = 'sometimes|nullable';
        $this->rules['arabic_description'] = 'sometimes|nullable';
        $this->rules['image'] = 'required|image';
-       $this->rules['category_id'] = 'required|exists:categories,id';
-       $this->rules['city_id'] = 'required|exists:cities,id';
-       $this->rules['subscriber_id'] = 'required|exists:subscribers,id';
-       $this->rules['map'] = 'sometimes|nullable';
-       $this->rules['end'] = 'required|date';
+       $this->rules['stage_id'] = 'required|exists:stages,id';
        $data = $this->validate($request, $this->rules);
        //Create New Photo
        $destination = public_path().'/uploads';
        $image= $request->image;
-       $data = new Stage();
+       $data = new Product();
        if (File::isFile($image)) {
            $name       = $image->getClientOriginalName(); // get image name
            $extension  = $image->getClientOriginalExtension(); // get image extension
@@ -101,21 +91,15 @@ class StagesController extends Controller
        }
        $data->name = $request->name;
        $data->arabic_name = $request->arabic_name;
-       $data->address = $request->address;
        $data->description = $request->description;
        $data->arabic_description = $request->arabic_description;
-       $data->category_id = $request->category_id;
-       $data->city_id = $request->city_id;
-       $data->subscriber_id = $request->subscriber_id;
-       $data->map = $request->map;
-       $data->end = $request->end;
-       $data->begin = Carbon::createFromFormat('Y-m-d', $request->end)->subYears(1);
+       $data->stage_id = $request->stage_id;
        $data->save();
 if($request['repeater-list'] !== null){
        foreach ($request['repeater-list'] as $repeater) {
 
            $image= $repeater['files'];
-           $imagedata = new StageImages();
+           $imagedata = new ProductImages();
            if (File::isFile($image)) {
                $name       = $image->getClientOriginalName(); // get image name
                $extension  = $image->getClientOriginalExtension(); // get image extension
@@ -125,13 +109,13 @@ if($request['repeater-list'] !== null){
                $uploadedImage = Image::make($image->getRealPath());
                $uploadedImage->save( $destination . '/' . $fileName, '100'); // save the image
                $imagedata->image = $fileName;
-               $imagedata->stage_id = $data->id;
+               $imagedata->product_id = $data->id;
                $imagedata->save();
            }
        }
 }
        session()->flash('success', trans("admin.add Successfully"));
-       return redirect()->route('stages.create');
+       return redirect()->route('products.create');
    }
 
 
@@ -149,19 +133,16 @@ if($request['repeater-list'] !== null){
             ]);
         }
 
-        $stage = Stage::findOrFail($id);
-        $subscribers = Subscriber::all();
-        $categories = Category::all();
-        $cities = City::all();
-        $stageImages = StageImages::where('stage_id',$id)->get();
+        $product =Product::findOrFail($id);
+        $stages = Stage::all();
 
-        return view('admin.stages.edit', [
-            'title' => trans("admin.edit stage") . ' : ' . $stage->name,
-            'edit'  => $stage,
-            'categories' => $categories,
-            'subscribers' => $subscribers,
-            'cities' => $cities,
-            'stageImages' => $stageImages,
+        $ProductImages = ProductImages::where('product_id',$id)->get();
+
+        return view('admin.products.edit', [
+            'title' => trans("admin.edit product") . ' : ' . $product->name,
+            'edit'  => $product,
+            'stages' => $stages,
+            'ProductImages' => $ProductImages,
 
         ]);
     }
@@ -183,20 +164,15 @@ if($request['repeater-list'] !== null){
 
         $this->rules['name'] = 'required';
         $this->rules['arabic_name'] = 'required';
-        $this->rules['address'] = 'required';
         $this->rules['description'] = 'sometimes|nullable';
         $this->rules['arabic_description'] = 'sometimes|nullable';
         $this->rules['image'] = 'sometimes|nullable';
-        $this->rules['category_id'] = 'required|exists:categories,id';
-        $this->rules['city_id'] = 'required|exists:cities,id';
-        $this->rules['subscriber_id'] = 'required|exists:subscribers,id';
-        $this->rules['map'] = 'sometimes|nullable';
-        $this->rules['end'] = 'sometimes|nullable|date';
+        $this->rules['stage_id'] = 'required|exists:stages,id';
         $data = $this->validate($request, $this->rules);
         //Create New Photo
         $destination = public_path() . '/uploads';
         $image = $request->image;
-        $data = Stage::findOrFail($id);
+        $data =Product::findOrFail($id);
         if (File::isFile($image)) {
             $name = $image->getClientOriginalName(); // get image name
             $extension = $image->getClientOriginalExtension(); // get image extension
@@ -210,18 +186,9 @@ if($request['repeater-list'] !== null){
         }
         $data->name = $request->name;
         $data->arabic_name = $request->arabic_name;
-        $data->address = $request->address;
         $data->description = $request->description;
         $data->arabic_description = $request->arabic_description;
-        $data->category_id = $request->category_id;
-        $data->city_id = $request->city_id;
-        $data->subscriber_id = $request->subscriber_id;
-        $data->map = $request->map;
-        if ($request->end !== null)
-        {
-            $data->end = $request->end;
-            $data->begin = Carbon::createFromFormat('Y-m-d', $request->end)->subYears(1);
-        }
+        $data->stage_id = $request->stage_id;
         $data->save();
 
         if($request['repeater-list'] !== null){
@@ -229,7 +196,7 @@ if($request['repeater-list'] !== null){
             foreach ($request['repeater-list'] as $repeater) {
 
                 $image= $repeater['files'];
-                $imagedata = new StageImages();
+                $imagedata = new ProductImages();
                 if (File::isFile($image)) {
                     $name       = $image->getClientOriginalName(); // get image name
                     $extension  = $image->getClientOriginalExtension(); // get image extension
@@ -239,7 +206,7 @@ if($request['repeater-list'] !== null){
                     $uploadedImage = Image::make($image->getRealPath());
                     $uploadedImage->save( $destination . '/' . $fileName, '100'); // save the image
                     $imagedata->image = $fileName;
-                    $imagedata->stage_id = $data->id;
+                    $imagedata->product_id = $data->id;
                     $imagedata->save();
                 }
             }
@@ -247,7 +214,7 @@ if($request['repeater-list'] !== null){
 
         // Success Message
         session()->flash('success', trans("admin.edit Successfully"));
-        return  redirect('admin/stages');
+        return  redirect('admin/products');
     }
 
 
@@ -269,9 +236,9 @@ if($request['repeater-list'] !== null){
         if (request()->filled('id')) {
             $id = request()->id;
         }
-        $stage = Stage::findOrFail($id);
-        if ($stage) {
-            $stage->delete();
+        $product =Product::findOrFail($id);
+        if ($product) {
+            $product->delete();
         }
     }
 

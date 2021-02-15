@@ -70,6 +70,17 @@
                         <li><a class="menu-item" href="{{ aurl('/stages/create') }}" data-i18n="nav.templates.horz.classic">{{ trans('admin.add stage') }}</a></li>
                     </ul>
                 </li>
+                <li class="nav-item"><a href="#"><i class="la la-shopping-cart"></i><span class="menu-title" data-i18n="nav.templates.main">{{ trans('admin.products') }}</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="{{ aurl('/products') }}" data-i18n="nav.templates.horz.classic">{{ trans('admin.all product') }}</a></li>
+                        <li><a class="menu-item" href="{{ aurl('/products/create') }}" data-i18n="nav.templates.horz.classic">{{ trans('admin.add product') }}</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#"><i class="la la-bell-o"></i><span class="menu-title" data-i18n="nav.templates.main">{{ trans('admin.orders') }}</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="{{ aurl('/orders') }}" data-i18n="nav.templates.horz.classic">{{ trans('admin.all order') }}</a></li>
+                    </ul>
+                </li>
         @endif
 
         @if (userCan('partners'))

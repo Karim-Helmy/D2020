@@ -65,7 +65,6 @@ class UsersController extends Controller
             return sendError(trans('login.Please Check Your Data'));
         }
         $user->setAppends([]);
-        $user['supervisor_id'] = $this->supervisor();
         $user['update_link'] = route('api.student.profile.update');
         return sendResponse(trans('login.profile'),$user);
     }
@@ -114,16 +113,42 @@ class UsersController extends Controller
            return sendResponse(trans('admin.edit Successfully'),$user->setAppends([]));
     }
 
-   /**
-    * Refresh a token.
-    *
-    * @return \Illuminate\Http\JsonResponse
-    */
-   public function supervisor()
-   {
-       return User::where('subscriber_id',auth()->user()->subscriber_id)->where('type','1')->first()->id ?? '';
-   }
+    public function register(Request $request)
+    {
 
+        $validator = Validator::make(request()->all(), [
+            "username"     => 'required|unique:users,username',
+            "name"       => "required|max:200",
+            "address"       => "sometimes|nullable|max:200",
+            "email"      => 'required|nullable|email',
+            "id_number"      => 'sometimes|nullable|min:10|max:17',
+            "mobile"      => 'required|nullable|numeric|unique:users,mobile',
+            "password"      => 'required|nullable|min:6',
+        ]);
+        //If Validation Errors
+        if ($validator->fails()) {
+            return sendError(implode(',',$validator->errors()->all()));
+        }
+        //Create User And Success Message
+        $user =new User();
+        // Upload Image
+        if ($request->hasFile('image')) {
+            $destination = "uploads/" . $user->subscriber_id . "/profile/" . date("Y") . "/" . date("m") . "/";
+            $request['photo'] = UploadImages($destination, $request->file('image')); // Upload Image
+        }
+        $user->name = $request->name;
+        $user->username = $request->username;
+        $user->email = $request->email;
+        $user->id_number = $request->id_number;
+        $user->mobile = $request->mobile;
+        $user->address = $request->address;
+        $user->type = '3';
+        $user->password = Hash::make($request->password);
+        $user->save();
+
+        $user['pass'] = $request->password;
+        return sendResponse(trans('admin.add Successfully'),$user->setAppends([]));
+    }
 
 
 

@@ -72,6 +72,8 @@ Route::group(['prefix' => 'admin','namespace'=>'admin'], function () {
         Route::get('messages/show/{sender_id?}', 'MessagesController@show');
         Route::post('messages/send/{sender_id?}', 'MessagesController@send');
 
+
+
         ######################### Subscriptions #################################
         Route::get('/subscribers', 'SubscribersController@index');
         Route::get('/subscribers/details', 'SubscribersController@details');
@@ -138,6 +140,22 @@ Route::group(['prefix' => 'admin','namespace'=>'admin'], function () {
         Route::get('stages/edit/{id}', 'StagesController@edit')->name('stages.edit');
         Route::patch('stages/update/{id}', 'StagesController@update')->name('stages.update');
         Route::post('stages/destroy', 'StagesController@destroy');
+
+        ######################### Products #################################
+        Route::get('products', 'ProductsController@index');
+        Route::get('products/show/{id}', 'ProductsController@show');
+        Route::get('products/create', 'ProductsController@create')->name('products.create');
+        Route::post('products/store', 'ProductsController@store')->name('products.store');
+        Route::get('products/edit/{id}', 'ProductsController@edit')->name('products.edit');
+        Route::patch('products/update/{id}', 'ProductsController@update')->name('products.update');
+        Route::post('products/destroy', 'ProductsController@destroy');
+
+
+
+        ######################### Orders #################################
+        Route::get('orders', 'OrdersController@index');
+        Route::get('orders/show/{sender_id?}', 'OrdersController@show');
+        Route::post('orders/send/{sender_id?}', 'OrdersController@send');
 
         ######################### Pioneers #################################
         Route::get('pioneers', 'PioneersController@index');

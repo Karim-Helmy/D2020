@@ -8,7 +8,7 @@
         <div class="row breadcrumbs-top d-inline-block">
           <div class="breadcrumb-wrapper col-12">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="{{ aurl("/stages/create") }}">{{ trans('admin.add stage') }}</a>
+              <li class="breadcrumb-item"><a href="{{ aurl("/products/create") }}">{{ trans('admin.add stage') }}</a>
               </li>
             </ol>
           </div>
@@ -40,10 +40,8 @@
                     <thead>
                       <tr>
                         <th>{{ trans('admin.title') }}</th>
-                          <th>{{ trans('admin.start_date') }}</th>
 
-                          <th>{{ trans('admin.end_date') }}</th>
-                          <th>{{ trans('admin.category') }}</th>
+                          <th>{{ trans('admin.stage') }}</th>
 
                           <th>{{ trans('admin.edit') }}</th>
                         <th>{{ trans('admin.delete') }}</th>
@@ -53,14 +51,13 @@
                     <tbody>
                         @foreach ($index as $i)
                             <tr id="show_{{ $i->id }}">
-                                <td>{{ $i->name }}</td>
-                                <td>{{ $i->begin }}</td>
+
 
                                 <td>{{ $i->end }}</td>
                                 <td>{{ $i->cat()->first()->name }}</td>
 
                                 <td>
-                                    <a href="{{ aurl('/stages/edit/'.$i->id) }}" class="btn btn-secondary btn-min-width mr-1 mb-1"><i
+                                    <a href="{{ aurl('/products/edit/'.$i->id) }}" class="btn btn-secondary btn-min-width mr-1 mb-1"><i
                                         class="ft-edit"></i> {{ trans('admin.edit') }}</a>
                                     <input type="hidden" value="{{ csrf_token() }}" id="csrf_token" />
                                 </td>
@@ -74,10 +71,8 @@
                     <tfoot>
                       <tr>
                           <th>{{ trans('admin.title') }}</th>
-                          <th>{{ trans('admin.start_date') }}</th>
 
-                          <th>{{ trans('admin.end_date') }}</th>
-                          <th>{{ trans('admin.category') }}</th>
+                          <th>{{ trans('admin.stage') }}</th>
 
                           <th>{{ trans('admin.edit') }}</th>
                           <th>{{ trans('admin.delete') }}</th>
@@ -124,7 +119,7 @@
            		    if (isConfirm) {
                         $.ajax({
                             type: 'post',
-                            url: "{{aurl("/stages/destroy/")}}",
+                            url: "{{aurl("/products/destroy/")}}",
                             data: {
                                 '_token': $('#csrf_token').val(),
                                 'id': id,
@@ -170,7 +165,7 @@
            		    if (isConfirm) {
                         $.ajax({
                             type: 'post',
-                            url: "{{aurl("/stages/destroy/")}}",
+                            url: "{{aurl("/products/destroy/")}}",
                             data: {
                                 '_token': $('#csrf_token').val(),
                                 'id': id,

@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Stage extends Model
+class Product extends Model
 {
     protected $fillable = [
         'name',
@@ -12,10 +12,10 @@ class Stage extends Model
 
     public function images()
     {
-        return $this->hasMany('App\StageImages');
+        return $this->hasMany('App\ProductImages');
     }
     public function Cat()
     {
-        return $this->belongsTo('App\Category','category_id');
+        return $this->belongsTo('App\Stage','stage_id');
     }
 }

@@ -8,7 +8,7 @@
             <div class="row breadcrumbs-top d-inline-block">
                 <div class="breadcrumb-wrapper col-12">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{ aurl("/stages") }}">{{ trans("admin.stages") }}</a>
+                        <li class="breadcrumb-item"><a href="{{ aurl("/products") }}">{{ trans("admin.products") }}</a>
                         </li>
                     </ol>
                 </div>
@@ -35,7 +35,7 @@
                         </div>
                         <div class="card-content collpase show">
                             <div class="card-body">
-                                <form class="form form-horizontal striped-rows form-bordered" method="post"  action="{{ route('stages.update', [$edit->id]) }}" enctype="multipart/form-data">
+                                <form class="form form-horizontal striped-rows form-bordered" method="post"  action="{{ route('products.update', [$edit->id]) }}" enctype="multipart/form-data">
                                     @csrf
                                     @method('PATCH')
                                     <div class="form-body">
@@ -69,109 +69,19 @@
                                         </div>
                                     </div>
 
-                                    <!-- Category ID -->
+                                    <!-- stage ID -->
                                     <div class="form-group row">
-                                        <label class="col-md-3 label-control" for="timesheetinput2">{{ trans('admin.category') }}</label>
+                                        <label class="col-md-3 label-control" for="timesheetinput2">{{ trans('admin.stage') }}</label>
                                         <div class="col-md-9">
                                             <div class="position-relative has-icon-left">
-                                                <select name="category_id" class="form-control">
-                                                    @foreach ($categories as $category)
-                                                        <option value="{{ $category->id }}" {{ $edit->category_id == $category->id ? "selected" : ""   }}>{{ $category->name }}</option>
+                                                <select name="stage_id" class="form-control">
+                                                    @foreach ($stages as $stage)
+                                                        <option value="{{ $stage->id }}" {{ $edit->stage_id == $stage->id ? "selected" : ""   }}>{{ $stage->name }}</option>
                                                     @endforeach
                                                 </select>
                                                 <div class="form-control-position">
                                                     <i class="la la-reorder"></i>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Subscriber ID -->
-                                    <div class="form-group row">
-                                        <label class="col-md-3 label-control" for="timesheetinput2">{{ trans('admin.subscriber') }}</label>
-                                        <div class="col-md-9">
-                                            <div class="position-relative has-icon-left">
-                                                <select name="subscriber_id" class="form-control">
-                                                    @foreach ($subscribers as $subscriber)
-                                                        <option value="{{ $subscriber->id }}" {{ $edit->subscriber_id == $subscriber->id ? "selected" : ""   }}>{{ $subscriber->name }}</option>
-                                                    @endforeach
-                                                </select>
-                                                <div class="form-control-position">
-                                                    <i class="la la-user"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Address  -->
-                                    <div class="form-group row">
-                                        <label class="col-md-3 label-control" for="timesheetinput2">{{ trans('admin.address') }}</label>
-                                        <div class="col-md-9">
-                                            <div class="position-relative has-icon-left">
-                                                <input type="text" required  class="form-control" placeholder="{{ trans('admin.address') }}"
-                                                       name="address" value="{{ $edit->address }}">
-                                                <div class="form-control-position">
-                                                    <i class="la la-location-arrow"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- map -->
-
-                                    <div class="form-group row" >
-                                        <label class="col-md-3 label-control" for="timesheetinput2"></label>
-                                        <div class="col-md-3" >
-                                            {!! $edit->map   !!}
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-3 label-control" for="timesheetinput2">{{ trans('admin.map') }}</label>
-                                        <div class="col-md-9">
-                                            <div class="position-relative has-icon-left">
-                                                <textarea class="form-control" rows="3"  name="map" >{{ old('map') }}</textarea>
-                                                <div class="form-control-position">
-                                                    <i class="la la-file-text"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- City ID -->
-                                    <div class="form-group row">
-                                        <label class="col-md-3 label-control" for="timesheetinput2">{{ trans('admin.city') }}</label>
-                                        <div class="col-md-9">
-                                            <div class="position-relative has-icon-left">
-                                                <select name="city_id" class="form-control">
-                                                    @foreach ($cities as $city)
-                                                        <option value="{{ $city->id }}"{{ $edit->city_id == $city->id ? "selected" : ""   }}>{{ $city->name }}</option>
-                                                    @endforeach
-                                                </select>
-                                                <div class="form-control-position">
-                                                    <i class="la la-reorder"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-3 label-control" for="timesheetinput2"></label>
-                                        <div class="col-md-3">
-                                            <div class="position-relative has-icon-left">
-                                                <ul class="list-group list-group-flush">
-                                                    <li class="list-group-item">
-                                                        <span class="badge badge-default badge-pill bg-primary float-right">{{ $edit->begin }}</span>
-تاريخ بداية الاشتراك                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <span class="badge badge-default badge-pill bg-danger float-right">{{ $edit->end }}</span>
-                                                        تاريخ نهاية الاشتراك                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-3 label-control" for="timesheetinput2">{{ trans('admin.end_date') }}</label>
-                                        <div class="col-md-9">
-                                            <div class="position-relative has-icon-left">
-                                                <input type="date" id="start" name="end">
-
                                             </div>
                                         </div>
                                     </div>
