@@ -67,10 +67,11 @@ class Kernel extends HttpKernel
         'Supervisor' => \App\Http\Middleware\Supervisor::class,
         'Student' => \App\Http\Middleware\Student::class,
         'jwt.verify' => \App\Http\Middleware\JwtMiddleware::class,
+        'cors' => \App\Http\Middleware\Cors::class,
     ];
 
     /**
-     * The priority-sorted list of middleware.
+     * The priority-sorted list of middleware.com
      *
      * This forces non-global middleware to always be in the given order.
      *

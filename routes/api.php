@@ -54,6 +54,11 @@ Route::namespace('api\student')->prefix('user')->group(function () {
     Route::get('cities','HomeController@cities');
     Route::get('subscribers','HomeController@subscribers');
     Route::get('stores','HomeController@stores');
+    Route::get('category_stores/{id}','HomeController@category');
+    Route::get('store_details/{id}','HomeController@store_details');
+    Route::post('add_store_review/{id}','HomeController@add_store_review');
+    Route::post('add_store_location/{id}','HomeController@add_store_location');
+    Route::post('register','UsersController@register');
 
 
     Route::group(['middleware' => 'jwt.verify'], function (){

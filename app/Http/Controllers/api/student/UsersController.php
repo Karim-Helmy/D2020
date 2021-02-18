@@ -28,7 +28,7 @@ class UsersController extends Controller
             return sendError(implode(',',$validator->errors()->all()));
         }
         // attempt to verify the credentials and create a token for the user
-        $user = User::where('username',request()->username)->where('type','3')->first(['id','name','username','password','email','mobile','address','birth_date','photo']);
+        $user = User::where('username',request()->username)->where('type','3')->first(['id','name','username','password','email','mobile','status','address','birth_date','photo']);
         if (!$user) {
             return sendError(trans('login.invalid_username'));
         }
@@ -37,6 +37,8 @@ class UsersController extends Controller
         }
         $user->setAppends([]);
         $user['token'] = JWTAuth::fromUser($user);
+        $user['type'] = 'user';
+
         $user['profile_link'] = route('api.student.profile');
         // all good so return the token
         return sendResponse(trans('admin.login success'),$user);
@@ -60,11 +62,13 @@ class UsersController extends Controller
      */
     public function profile()
     {
-        $user = User::where('id',auth()->id())->where('type','3')->first(['id','name','username','email','mobile','address','birth_date','photo']);
+        $user = User::where('id',auth()->id())->where('type','3')->first(['id','name','username','email','mobile','status','address','birth_date','photo']);
         if(!$user){
             return sendError(trans('login.Please Check Your Data'));
         }
         $user->setAppends([]);
+        $user['type'] = 'user';
+
         $user['update_link'] = route('api.student.profile.update');
         return sendResponse(trans('login.profile'),$user);
     }
@@ -146,7 +150,6 @@ class UsersController extends Controller
         $user->password = Hash::make($request->password);
         $user->save();
 
-        $user['pass'] = $request->password;
         return sendResponse(trans('admin.add Successfully'),$user->setAppends([]));
     }
 

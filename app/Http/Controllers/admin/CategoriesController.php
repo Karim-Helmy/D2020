@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Category;
+use App\Stage;
+use App\Product;
+
 use File;
 use Image;
 
@@ -182,6 +185,12 @@ class CategoriesController extends Controller
             $id = request()->id;
         }
         $category = Category::findOrFail($id);
+        $data = Stage::where('category_id',$id)->get();
+        foreach ($data as $stage){
+            @unlink(public_path() . '/uploads/' . $stage->image);
+            $stage->delete();
+        }
+
         if ($category) {
             @unlink(public_path() . '/uploads/' . $category->image);
 

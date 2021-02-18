@@ -27,33 +27,13 @@ class MessagesController extends Controller
             return sendError(trans('login.Please Check Your Data'));
         }
         //Get messages
-        $message = CourseUser::where('user_id',auth()->id())->groupBy('user_id')->with('course')->has('trainer')->get();
-        $messages = $message->map(function($course){
-            $trainer = CourseUser::with('user')->where('course_id',$course->course_id)->where('type','2')->first();
-            return [
-                'id'   => $trainer->user_id ?? '',
-                'name'        => $trainer->user->name ?? '',
-                'type'        => $trainer->user->type ?? '',
-                'photo'       => $trainer->user->photo ?? '',
-                'mobile'      => $trainer->user->mobile ?? '',
-                'show_link'   => route('api.student.messages.show',['sender_id' => $trainer->user_id]) ?? '',
-            ];
-        });
-        $supervisor = User::where('subscriber_id',$user->subscriber_id)->where('type','1')->first();
-        $supervisor_data = [
-            'id'   => $supervisor->id ?? '',
-            'name'        => $supervisor->name ?? '',
-            'type'        => $supervisor->type ?? '',
-            'photo'       => $supervisor->photo ?? '',
-            'mobile'      => $supervisor->mobile ?? '',
-            'show_link'   => route('api.student.messages.show',['sender_id' => $supervisor->id]) ?? '',
-        ];
-        $message = collect($messages)->prepend($supervisor_data);
+        $message = Message::where('sender_id',auth()->id())->groupBy('sender_id')->get();
+
 
         return response([
             "status" => true,
-            "message" => trans('admin.messages'),
-            "student_name" => $user->name,
+            "message" => 'الرسائل',
+            "User" => $user->name,
             "data"    => $message,
         ],200);
     }
@@ -120,7 +100,6 @@ class MessagesController extends Controller
     {
         //Make Validation
         $validator = \Validator::make($request->all(), [
-            "receiver_id" => "required|exists:users,id",
             'subject'     =>'required|max:150',
             'message'     =>'required',
         ]);
@@ -128,18 +107,14 @@ class MessagesController extends Controller
         if ($validator->fails()) {
             return sendError(implode(',',$validator->errors()->all()));
         }
-        //Check receiver_id of same school with sons of father
-        $user = User::where('subscriber_id',auth()->user()->subscriber_id)->whereIn('type',['1','2'])->where('id',$request->receiver_id)->first();
-        if(!$user){
-            return sendError(trans('login.Please Check Your Data'));
-        }
+
         try{
             $request['sender_id']   = auth()->id();
             $message = Message::Create($request->all());
             return sendResponse(trans('admin.sent Successfully'),$message);
-        //If Find Any Problem
+            //If Find Any Problem
         }catch(Exception $e){
-               return sendError(trans('login.Please Check Your Data'));
+            return sendError(trans('login.Please Check Your Data'));
         }
     }
 

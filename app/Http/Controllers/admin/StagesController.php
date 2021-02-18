@@ -270,7 +270,13 @@ if($request['repeater-list'] !== null){
             $id = request()->id;
         }
         $stage = Stage::findOrFail($id);
+        $stageImages = StageImages::where('stage_id',$id)->get();
+        foreach ($stageImages as $stage){
+            @unlink(public_path() . '/uploads/' . $stage->image);
+            $stage->delete();
+        }
         if ($stage) {
+            @unlink(public_path() . '/uploads/' . $stage->image);
             $stage->delete();
         }
     }
